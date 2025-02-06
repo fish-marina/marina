@@ -3,7 +3,7 @@
 
 # Contributing
 
-> Oh My Fish Documentation
+> Marina Documentation
 
 <br>
 
@@ -14,7 +14,7 @@
 * [Commit Messages](#commit-messages)
 * [Code Style](#code-style)
 
-Thanks for taking the time to read this guide! Oh My Fish is an open initiative and everyone is welcome to contribute!
+Thanks for taking the time to read this guide! Marina is an open initiative and everyone is welcome to contribute!
 
 ## Bugs and discussions
 
@@ -24,7 +24,7 @@ When reporting bugs be sure to always fill the checklist below with data from yo
 
 * Operating System: Arch Linux
 * Fish Version: 2.3 (get using `fish --version`)
-* Oh My Fish Version: 2  (get using `omf --version`)
+* Marina Version: 2  (get using `mar --version`)
 * Git version: 1.9.5 (get using `git --version`)
 
 When you have a new feature or large change in mind, please open a new issue with your suggestion to discuss the idea together.
@@ -35,7 +35,7 @@ You can contribute by triaging issues which may include reproducing bug reports 
 
 ## Package Repositories
 
-This is the repository for the core Oh My Fish framework and bootstrap installer.
+This is the repository for the core Marina framework and bootstrap installer.
 
 If your issue is related to a specific package, we still may be able to help, but consider visiting that package's issue tracker first.
 
@@ -48,7 +48,7 @@ If your issue is related to a specific package, we still may be able to help, bu
 
 ## Code Style
 
-Different from Fish's code style, Oh My Fish uses 2 spaces for indentation. As fish language is very clean it's possible to use 2 spaces without making hard work with the code. Here goes some other styles we are using:
+Different from Fish's code style, Marina uses 2 spaces for indentation. As fish language is very clean it's possible to use 2 spaces without making hard work with the code. Here goes some other styles we are using:
 
 ### Control Flow
 

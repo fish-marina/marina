@@ -161,8 +161,8 @@ A theme for fish that puts most stuff on the right.
 #### Installation
 
 ```fish
-omf update
-omf install aight
+mar update
+mar install aight
 ```
 
 #### Features
@@ -197,13 +197,13 @@ Theme imported from oh-my-zsh [ys-theme](http://blog.ysmood.org/my-ys-terminal-t
 
 ###### Install
 
-####### [Oh-My-Fish]
+####### [Marina]
 
 ```fish
-omf install ays
+mar install ays
 ```
 
-[Oh-My-Fish]: https://github.com/oh-my-fish/oh-my-fish
+[Marina]: https://github.com/oh-my-fish/oh-my-fish
 
 
 # [barracuda](https://github.com/meverss/barracuda)
@@ -485,14 +485,14 @@ Unfortunately this function can only perform backups. Restores have to be decomp
 
 
 # [batman](https://github.com/oh-my-fish/theme-batman)
-<img src="https://dl.dropboxusercontent.com/u/56336/omf/omf-logo-optimised.svg" align="left" width="144px" height="144px"/>
+<img src="https://dl.dropboxusercontent.com/u/56336/mar/mar-logo-optimised.svg" align="left" width="144px" height="144px"/>
 
 ###### Batman
-> A [Oh My Fish][omf-link] theme inspired by Batman.
+> A [Marina][mar-link] theme inspired by Batman.
 
 [![MIT License](https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square)](/LICENSE)
 [![Fish Shell Version](https://img.shields.io/badge/fish-v2.2.0-007EC7.svg?style=flat-square)](http://fishshell.com)
-[![Oh My Fish Framework](https://img.shields.io/badge/Oh%20My%20Fish-Framework-007EC7.svg?style=flat-square)](https://www.github.com/oh-my-fish/oh-my-fish)
+[![Marina Framework](https://img.shields.io/badge/Oh%20My%20Fish-Framework-007EC7.svg?style=flat-square)](https://www.github.com/oh-my-fish/oh-my-fish)
 
 <br/>
 
@@ -526,7 +526,7 @@ _From left to right:_
 
 [THEMES-NAMESPACE-batman-mit]:            http://opensource.org/licenses/MIT
 [THEMES-NAMESPACE-batman-author]:         http://about.bucaran.me
-[omf-link]:       https://www.github.com/oh-my-fish/oh-my-fish
+[mar-link]:       https://www.github.com/oh-my-fish/oh-my-fish
 [THEMES-NAMESPACE-batman-contributors]:   https://github.com/oh-my-fish/oh-my-fish/graphs/contributors
 
 
@@ -551,7 +551,7 @@ number of non-pushed commits, and whether the previous command has failed.
 #### bira
 
 Theme imported from Oh my ZSH: https://github.com/robbyrussell/oh-my-zsh/blob/master/themes/bira.zsh-theme
-Contains traces of nuts and code from other Oh my fish themes.
+Contains traces of nuts and code from other Marina themes.
 
 Display username, hostname, current path, ruby version and git status. Display the latest error status in the right prompt.
 
@@ -566,16 +566,16 @@ TODO:
 
 `bobthefish` is a Powerline-style, Git-aware [fish][btf-fish] theme optimized for awesome.
 
-[![Oh My Fish](https://img.shields.io/badge/Framework-Oh_My_Fish-blue.svg?style=flat)](https://github.com/oh-my-fish/oh-my-fish) [![MIT License](https://img.shields.io/github/license/oh-my-fish/theme-bobthefish.svg?style=flat)](/LICENSE.md)
+[![Marina](https://img.shields.io/badge/Framework-Oh_My_Fish-blue.svg?style=flat)](https://github.com/oh-my-fish/oh-my-fish) [![MIT License](https://img.shields.io/github/license/oh-my-fish/theme-bobthefish.svg?style=flat)](/LICENSE.md)
 
 ![bobthefish][btf-screencast]
 
 
 ##### Installation
 
-Be sure to have Oh My Fish installed. Then just:
+Be sure to have Marina installed. Then just:
 
-    omf install bobthefish
+    mar install bobthefish
 
 You will need a [Powerline-patched font][btf-patching] for this to work, unless you enable the compatibility fallback option:
 
@@ -848,18 +848,18 @@ Adapted from https://github.com/oh-my-fish/theme-agnoster.
 <img src="https://cdn.rawgit.com/oh-my-fish/oh-my-fish/e4f1c2e0219a17e2c748b824004c8d0b38055c16/docs/logo.svg" align="left" width="144px" height="144px"/>
 
 ###### boxfish
-> A theme for [Oh My Fish][omf-link].
+> A theme for [Marina][mar-link].
 
 [![MIT License](https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square)](/LICENSE)
 [![Fish Shell Version](https://img.shields.io/badge/fish-v2.2.0-007EC7.svg?style=flat-square)](https://fishshell.com)
-[![Oh My Fish Framework](https://img.shields.io/badge/Oh%20My%20Fish-Framework-007EC7.svg?style=flat-square)](https://www.github.com/oh-my-fish/oh-my-fish)
+[![Marina Framework](https://img.shields.io/badge/Oh%20My%20Fish-Framework-007EC7.svg?style=flat-square)](https://www.github.com/oh-my-fish/oh-my-fish)
 
 <br/>
 
 #### Install
 
 ```fish
-$ omf install boxfish
+$ mar install boxfish
 ```
 
 #### Features
@@ -882,7 +882,7 @@ $ omf install boxfish
 [THEMES-NAMESPACE-boxfish-mit]:            https://opensource.org/licenses/MIT
 [THEMES-NAMESPACE-boxfish-author]:         https://github.com/joelwanner
 [THEMES-NAMESPACE-boxfish-contributors]:   https://github.com/joelwanner/theme-boxfish/graphs/contributors
-[omf-link]:       https://www.github.com/oh-my-fish/oh-my-fish
+[mar-link]:       https://www.github.com/oh-my-fish/oh-my-fish
 
 [license-badge]:  https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square
 
@@ -1200,10 +1200,10 @@ A thin, classy theme composed of a chain of information.
 
 
 #### Installation
-Install with [Oh My Fish][THEMES-NAMESPACE-chain-omf]:
+Install with [Marina][THEMES-NAMESPACE-chain-mar]:
 
 ```fish
-$ omf install chain
+$ mar install chain
 ```
 
 
@@ -1294,7 +1294,7 @@ The glyphs used in the default links can be customized using global variables. H
 [THEMES-NAMESPACE-chain-mit]:            http://opensource.org/licenses/MIT
 [THEMES-NAMESPACE-chain-author]:         https://github.com/coderstephen
 [THEMES-NAMESPACE-chain-contributors]:   https://github.com/coderstephen/theme-chain/graphs/contributors
-[THEMES-NAMESPACE-chain-omf]:            https://github.com/oh-my-fish/oh-my-fish
+[THEMES-NAMESPACE-chain-mar]:            https://github.com/oh-my-fish/oh-my-fish
 
 
 # [clearance](https://github.com/oh-my-fish/theme-clearance)
@@ -1331,7 +1331,7 @@ This is a theme I designed for myself but have given to a few friends and decide
 # [coffeeandcode](https://github.com/oh-my-fish/theme-coffeeandcode)
 ### Fish Theme: coffeeandcode
 
-Another theme choice for Oh-My-Fish! originally created by
+Another theme choice for Marina! originally created by
 [Jonathan Knapp](http://jonknapp.com).
 
 ![coffeeandcode](https://cloud.githubusercontent.com/assets/1272018/5966170/e846c75e-a7f9-11e4-8aeb-ebec4c974f5b.png)
@@ -1373,11 +1373,11 @@ For this theme you need a emoji supporting terminal and the emoji-clock plugin
 # [cyan](https://github.com/oh-my-fish/theme-qing)
 ###### cyan
 
-> A theme for [Oh My Fish][omf-link].
+> A theme for [Marina][mar-link].
 
 [![MIT License](https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square)](/LICENSE)
 [![Fish Shell Version](https://img.shields.io/badge/fish-v2.2.0-007EC7.svg?style=flat-square)](http://fishshell.com)
-[![Oh My Fish Framework](https://img.shields.io/badge/Oh%20My%20Fish-Framework-007EC7.svg?style=flat-square)](https://www.github.com/oh-my-fish/oh-my-fish)
+[![Marina Framework](https://img.shields.io/badge/Oh%20My%20Fish-Framework-007EC7.svg?style=flat-square)](https://www.github.com/oh-my-fish/oh-my-fish)
 [![Join the chat at https://gitter.im/oh-my-fish/theme-qing](https://badges.gitter.im/oh-my-fish/theme-qing.svg)](https://gitter.im/oh-my-fish/theme-qing?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ![IMG](https://cloud.githubusercontent.com/assets/8684553/14587898/02053638-04ee-11e6-9b6f-f7314f2cb180.png)
@@ -1386,7 +1386,7 @@ For this theme you need a emoji supporting terminal and the emoji-clock plugin
 
 
 ```fish
-$ omf install cyan
+$ mar install cyan
 ```
 This theme is based Michele Bologna's theme you can see @[Michele Bologna](http://michelebologna.net) for more informations.
 and the `fish_greeting.fish` forked from @[bramblex](https://github.com/bramblex/bubblegum).
@@ -1423,7 +1423,7 @@ Thanks!
 [THEMES-NAMESPACE-cyan-mit]:            http://opensource.org/licenses/MIT
 [THEMES-NAMESPACE-cyan-author]:         http://github.com/szwathub
 [THEMES-NAMESPACE-cyan-contributors]:   https://github.com/szwathub/cyan/graphs/contributors
-[omf-link]:       https://www.github.com/oh-my-fish/oh-my-fish
+[mar-link]:       https://www.github.com/oh-my-fish/oh-my-fish
 
 [license-badge]:  https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square
 
@@ -1656,18 +1656,18 @@ Give me feedback if you ...
 
 # [default](https://github.com/oh-my-fish/theme-default)
 <div align="center">
-  <a href="http://github.com/fish-shell/omf">
+  <a href="http://github.com/fish-shell/mar">
   <img width=90px  src="https://cloud.githubusercontent.com/assets/8317250/8510172/f006f0a4-230f-11e5-98b6-5c2e3c87088f.png">
   </a>
 </div>
 <br>
 
-> Default theme for [Oh My Fish][omf-link].
+> Default theme for [Marina][mar-link].
 
 #### Install
 
 ```fish
-$ omf theme default
+$ mar theme default
 ```
 
 #### Features
@@ -1697,7 +1697,7 @@ Only display the folder name:
 [THEMES-NAMESPACE-default-mit]:            http://opensource.org/licenses/MIT
 [THEMES-NAMESPACE-default-author]:         http://github.com/bpinto
 [THEMES-NAMESPACE-default-contributors]:   https://github.com/oh-my-fish/theme-default/graphs/contributors
-[omf-link]:       https://www.github.com/fish-shell/oh-my-fish
+[mar-link]:       https://www.github.com/fish-shell/oh-my-fish
 
 [license-badge]:  https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square
 [travis-badge]:   http://img.shields.io/travis/oh-my-fish/theme-default.svg?style=flat-square
@@ -1732,11 +1732,11 @@ but should work in a dark-on-light terminal with a few terminal color tweaks.
 #### Installation
 
 Install using
-    [Oh My Fish](https://github.com/oh-my-fish/oh-my-fish):
+    [Marina](https://github.com/oh-my-fish/oh-my-fish):
 
 ```fish
-omf install https://github.com/reitzig/theme-dmorrell.git 
-omf theme dmorrell
+mar install https://github.com/reitzig/theme-dmorrell.git 
+mar theme dmorrell
 ```
 
 Set the list of default users by adding
@@ -1761,8 +1761,8 @@ You can also add the same line to your own fork of the theme.
     [git_util](https://github.com/fisherman/git_util).
 
 
-# [doughsay](https://github.com/doughsay/omf-theme-doughsay.git)
-<a href="/doughsay/omf-theme-doughsay/master/README.md">Moved Permanently</a>.
+# [doughsay](https://github.com/doughsay/mar-theme-doughsay.git)
+<a href="/doughsay/mar-theme-doughsay/master/README.md">Moved Permanently</a>.
 
 
 
@@ -1814,18 +1814,18 @@ Check out [Anonymous Pro](http://www.marksimonson.com/fonts/view/anonymous-pro).
 
 [![MIT License][license-badge]](/LICENSE)
 [![Fish Shell Version][fish-badge]](http://fishshell.com)
-[![Oh My Fish Framework][omf-badge]][omf-link]
+[![Marina Framework][mar-badge]][mar-link]
 
 <br/>
 
 #### Install
 
-Using [Oh My Fish][omf-link]:
+Using [Marina][mar-link]:
 ```shell
-$ omf install eden
+$ mar install eden
 
 ### to uninstall :/
-$ omf uninstall eden
+$ mar uninstall eden
 ```
 
 Using [Fisherman][fisher-link]:
@@ -1861,9 +1861,9 @@ Font: [INCONSOLATA](https://www.google.com/fonts/specimen/Inconsolata)
 [THEMES-NAMESPACE-eden-mit]:            http://opensource.org/licenses/MIT
 [THEMES-NAMESPACE-eden-author]:         http://github.com/amio
 [fish-link]:      http://fishshell.com/
-[omf-link]:       https://github.com/oh-my-fish/oh-my-fish
+[mar-link]:       https://github.com/oh-my-fish/oh-my-fish
 [fisher-link]:    https://github.com/fisherman/fisherman
-[omf-badge]:      https://flat.badgen.net/badge/Oh%20My%20Fish/Framework
+[mar-badge]:      https://flat.badgen.net/badge/Oh%20My%20Fish/Framework
 [fish-badge]:     https://flat.badgen.net/badge/fish/v2.2.0
 [license-badge]:  https://flat.badgen.net/badge/license/MIT
 
@@ -1910,16 +1910,16 @@ Forked from https://github.com/oh-my-fish/oh-my-fish/blob/master/docs/Themes.md#
 <img src="https://cdn.rawgit.com/oh-my-fish/oh-my-fish/e4f1c2e0219a17e2c748b824004c8d0b38055c16/docs/logo.svg" align="left" width="144px" height="144px"/>
 
 ###### es theme
-> A Powerline-style, Git-aware theme for [Oh My Fish][omf-link].
+> A Powerline-style, Git-aware theme for [Marina][mar-link].
 
-[![MIT License](https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square)](/LICENSE) [![Fish Shell Version](https://img.shields.io/badge/fish-v2.2.0-007EC7.svg?style=flat-square)](http://fishshell.com) [![Oh My Fish Framework](https://img.shields.io/badge/Oh%20My%20Fish-Framework-007EC7.svg?style=flat-square)](https://www.github.com/oh-my-fish/oh-my-fish)
+[![MIT License](https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square)](/LICENSE) [![Fish Shell Version](https://img.shields.io/badge/fish-v2.2.0-007EC7.svg?style=flat-square)](http://fishshell.com) [![Marina Framework](https://img.shields.io/badge/Oh%20My%20Fish-Framework-007EC7.svg?style=flat-square)](https://www.github.com/oh-my-fish/oh-my-fish)
 
 <br/>
 
 #### Install
-Make sure you have [Oh My Fish][omf-link] installed. Then just
+Make sure you have [Marina][mar-link] installed. Then just
 ```fish
-$ omf install es
+$ mar install es
 ```
 
 #### Requirements
@@ -1958,7 +1958,7 @@ $ omf install es
 
 [THEMES-NAMESPACE-es-mit]:            http://opensource.org/licenses/MIT
 [THEMES-NAMESPACE-es-author]:         http://github.com/eugenesvk
-[omf-link]:       https://www.github.com/oh-my-fish/oh-my-fish
+[mar-link]:       https://www.github.com/oh-my-fish/oh-my-fish
 
 [license-badge]:  https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square
 
@@ -1967,7 +1967,7 @@ $ omf install es
 <img src="https://cdn.rawgit.com/oh-my-fish/oh-my-fish/e4f1c2e0219a17e2c748b824004c8d0b38055c16/docs/logo.svg" align="left" width="144px" height="144px"/>
 
 ### fishbone
-A clean theme for [fish shell](https://fishshell.com) managed by [Oh my fish](https://github.com/oh-my-fish/oh-my-fish)
+A clean theme for [fish shell](https://fishshell.com) managed by [Marina](https://github.com/oh-my-fish/oh-my-fish)
 
 <br />
 <br />
@@ -1979,10 +1979,10 @@ A clean theme for [fish shell](https://fishshell.com) managed by [Oh my fish](ht
 #### Installation
 
 ```fish
-omf update  # Just if your omf installation is old. Avoids missing the package
-omf install fishbone
+mar update  # Just if your mar installation is old. Avoids missing the package
+mar install fishbone
 ```
-> omf (Oh my fish) is a package manager for fish shell. Just like pip is for Python and gem is for Ruby
+> mar (Marina) is a package manager for fish shell. Just like pip is for Python and gem is for Ruby
 
 #### Features
 
@@ -2108,11 +2108,11 @@ cloned from oh-my-zsh.
 <img src="https://cdn.rawgit.com/oh-my-fish/oh-my-fish/e4f1c2e0219a17e2c748b824004c8d0b38055c16/docs/logo.svg" align="left" width="144px" height="144px"/>
 
 ###### Gentoo fish theme
-> A theme for [Oh My Fish][omf-link].
+> A theme for [Marina][mar-link].
 
 [![MIT License](https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square)](/LICENSE)
 [![Fish Shell Version](https://img.shields.io/badge/fish-v2.2.0-007EC7.svg?style=flat-square)](https://fishshell.com)
-[![Oh My Fish Framework](https://img.shields.io/badge/Oh%20My%20Fish-Framework-007EC7.svg?style=flat-square)](https://www.github.com/oh-my-fish/oh-my-fish)
+[![Marina Framework](https://img.shields.io/badge/Oh%20My%20Fish-Framework-007EC7.svg?style=flat-square)](https://www.github.com/oh-my-fish/oh-my-fish)
 
 <br/>
 
@@ -2120,7 +2120,7 @@ cloned from oh-my-zsh.
 #### Install
 
 ```fish
-$ omf install gentoo
+$ mar install gentoo
 ```
 
 
@@ -2159,7 +2159,7 @@ Unofficial Gentoo fish prompt theme which tries to follow Gentoo default bash $P
 [THEMES-NAMESPACE-gentoo-mit]:            https://opensource.org/licenses/MIT
 [THEMES-NAMESPACE-gentoo-author]:         https://github.com/ribugent
 [THEMES-NAMESPACE-gentoo-contributors]:   https://github.com/ribugent/theme-gentoo/graphs/contributors
-[omf-link]:       https://www.github.com/oh-my-fish/oh-my-fish
+[mar-link]:       https://www.github.com/oh-my-fish/oh-my-fish
 
 [license-badge]:  https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square
 
@@ -2255,7 +2255,7 @@ fisher add usami-k/graystatus
 If you use [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish) :
 
 ```
-omf install graystatus
+mar install graystatus
 ```
 
 #### Configuration
@@ -2289,23 +2289,23 @@ limitations under the License.
 
 ###### Harleen
 
-> A [Oh My Fish][omf-link] theme inspired by [Harleen Quinzel](http://dcextendeduniverse.wikia.com/wiki/Harley_Quinn).
+> A [Marina][mar-link] theme inspired by [Harleen Quinzel](http://dcextendeduniverse.wikia.com/wiki/Harley_Quinn).
 
 [![MIT License](https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square)](/LICENSE)
 [![Fish Shell Version](https://img.shields.io/badge/fish-v2.2.0-007EC7.svg?style=flat-square)](https://fishshell.com)
-[![Oh My Fish Framework](https://img.shields.io/badge/Oh%20My%20Fish-Framework-007EC7.svg?style=flat-square)](https://www.github.com/oh-my-fish/oh-my-fish)
+[![Marina Framework](https://img.shields.io/badge/Oh%20My%20Fish-Framework-007EC7.svg?style=flat-square)](https://www.github.com/oh-my-fish/oh-my-fish)
 
 #### Install
 
 ```fish
-$ omf install harleen
+$ mar install harleen
 ```
 
 *Please notice the theme requires [git](https://git-scm.com/) to work efficiently.*
 
 #### Description
 
-*Harleen* is a simple yet useful [Oh My Fish][omf-link] theme highly inspired by the [batman theme](https://github.com/gitter-badger/batman) and the [sushi theme](https://github.com/umayr/theme-sushi), but also from the [fish default theme](https://github.com/oh-my-fish/theme-default).
+*Harleen* is a simple yet useful [Marina][mar-link] theme highly inspired by the [batman theme](https://github.com/gitter-badger/batman) and the [sushi theme](https://github.com/umayr/theme-sushi), but also from the [fish default theme](https://github.com/oh-my-fish/theme-default).
 
 It is meant to remain simple and bring some useful information when browsing a git repository.
 
@@ -2332,7 +2332,7 @@ Also a huge thanks to @sagebind for his really nice and helpful comments :thumbs
 [THEMES-NAMESPACE-harleen-mit]:            https://opensource.org/licenses/MIT
 [THEMES-NAMESPACE-harleen-author]:         https://github.com/aneveux
 [THEMES-NAMESPACE-harleen-contributors]:   https://github.com/aneveux/theme-harleen/graphs/contributors
-[omf-link]:       https://www.github.com/oh-my-fish/oh-my-fish
+[mar-link]:       https://www.github.com/oh-my-fish/oh-my-fish
 
 [license-badge]:  https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square
 
@@ -2406,26 +2406,26 @@ theme](http://jacaetevha.github.io/oh-my-fish/screenshot.png)
 <img src="https://cdn.rawgit.com/oh-my-fish/oh-my-fish/e4f1c2e0219a17e2c748b824004c8d0b38055c16/docs/logo.svg" align="left" width="144px" height="144px"/>
 
 ###### johanson
-> A two-line theme for [Oh My Fish][omf-link] with Python virtual environment  and fabfile support. Loosely based on cbjohnson.
+> A two-line theme for [Marina][mar-link] with Python virtual environment  and fabfile support. Loosely based on cbjohnson.
 
 [![MIT License](https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square)](/LICENSE)
 [![Fish Shell Version](https://img.shields.io/badge/fish-v2.2.0-007EC7.svg?style=flat-square)](https://fishshell.com)
-[![Oh My Fish Framework](https://img.shields.io/badge/Oh%20My%20Fish-Framework-007EC7.svg?style=flat-square)](https://www.github.com/oh-my-fish/oh-my-fish)
+[![Marina Framework](https://img.shields.io/badge/Oh%20My%20Fish-Framework-007EC7.svg?style=flat-square)](https://www.github.com/oh-my-fish/oh-my-fish)
 
 <br/>
 
 #### Install
 
 ```fish
-$ omf install johanson
+$ mar install johanson
 ```
 #### Screenshot
 
-![Omf johanson theme screenshot](https://raw.githubusercontent.com/johanson/theme-johanson/master/screenshots/omf-theme-johanson-1.png?raw=true)
+![Mar johanson theme screenshot](https://raw.githubusercontent.com/johanson/theme-johanson/master/screenshots/mar-theme-johanson-1.png?raw=true)
 
-![Omf johanson theme screenshot](https://raw.githubusercontent.com/johanson/theme-johanson/master/screenshots/omf-theme-johanson-2.png?raw=true)
+![Mar johanson theme screenshot](https://raw.githubusercontent.com/johanson/theme-johanson/master/screenshots/mar-theme-johanson-2.png?raw=true)
 
-![Omf johanson theme screenshot](https://raw.githubusercontent.com/johanson/theme-johanson/master/screenshots/omf-theme-johanson-3.png?raw=true)
+![Mar johanson theme screenshot](https://raw.githubusercontent.com/johanson/theme-johanson/master/screenshots/mar-theme-johanson-3.png?raw=true)
 
 ### License
 
@@ -2434,7 +2434,7 @@ $ omf install johanson
 [THEMES-NAMESPACE-johanson-mit]:            https://opensource.org/licenses/MIT
 [THEMES-NAMESPACE-johanson-author]:         https://github.com/johanson
 [THEMES-NAMESPACE-johanson-contributors]:   https://github.com/johanson/theme-johanson/graphs/contributors
-[omf-link]:       https://www.github.com/oh-my-fish/oh-my-fish
+[mar-link]:       https://www.github.com/oh-my-fish/oh-my-fish
 
 [license-badge]:  https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square
 
@@ -2444,7 +2444,7 @@ $ omf install johanson
 
 `kawasaki` is a customizable [fish][THEMES-NAMESPACE-kawasaki-fish] theme that emphasizes a simple and useful prompt without useless cluttter.
 
-[![Oh My Fish](https://img.shields.io/badge/Framework-Oh_My_Fish-blue.svg?style=flat)](https://github.com/oh-my-fish/oh-my-fish)
+[![Marina](https://img.shields.io/badge/Framework-Oh_My_Fish-blue.svg?style=flat)](https://github.com/oh-my-fish/oh-my-fish)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](/LICENSE)
 
 ![kawasaki][THEMES-NAMESPACE-kawasaki-screenshot]
@@ -2461,11 +2461,11 @@ $ omf install johanson
 ###### Requirements
 * [Fish shell][THEMES-NAMESPACE-kawasaki-fish] - a smart and user-friendly command line
 shell for OS X, Linux, and the rest of the family
-* [Oh My Fish][THEMES-NAMESPACE-kawasaki-omf] - The Fishshell Framework
+* [Marina][THEMES-NAMESPACE-kawasaki-mar] - The Fishshell Framework
 
-Once Oh My Fish is installed:
+Once Marina is installed:
 
-    omf install kawasaki
+    mar install kawasaki
 
 This theme was inspired by [bira][THEMES-NAMESPACE-kawasaki-bira].
 
@@ -2647,7 +2647,7 @@ Copyright (c) 2016 Beau Hastings
 
 [THEMES-NAMESPACE-kawasaki-license]:    /LICENSE
 [THEMES-NAMESPACE-kawasaki-fish]:       https://github.com/fish-shell/fish-shell
-[THEMES-NAMESPACE-kawasaki-omf]:        https://github.com/oh-my-fish/oh-my-fish
+[THEMES-NAMESPACE-kawasaki-mar]:        https://github.com/oh-my-fish/oh-my-fish
 [THEMES-NAMESPACE-kawasaki-screenshot]: https://cloud.githubusercontent.com/assets/195790/20061473/9545bd4c-a4c5-11e6-83da-8b0a954b8a5a.gif
 [THEMES-NAMESPACE-kawasaki-bira]:       https://github.com/oh-my-fish/theme-bira
 [THEMES-NAMESPACE-kawasaki-dotfiles]:   https://github.com/oh-my-fish/oh-my-fish#dotfiles
@@ -2671,7 +2671,7 @@ A very simple theme optimized for Git. Less is more.
 
 # [l](https://github.com/oh-my-fish/theme-l)
 <div align="center">
-  <a href="http://github.com/fish-shell/omf">
+  <a href="http://github.com/fish-shell/mar">
   <img width=90px  src="https://cloud.githubusercontent.com/assets/8317250/8510172/f006f0a4-230f-11e5-98b6-5c2e3c87088f.png">
   </a>
 </div>
@@ -2682,7 +2682,7 @@ A very simple theme optimized for Git. Less is more.
 #### Install
 
 ```fish
-$ omf theme l
+$ mar theme l
 ```
 
 #### Features
@@ -2724,7 +2724,7 @@ set theme_display_rbenv_with_gemfile_only 'yes'
 [THEMES-NAMESPACE-l-mit]:            http://opensource.org/licenses/MIT
 [THEMES-NAMESPACE-l-author]:         http://github.com/bpinto
 [THEMES-NAMESPACE-l-contributors]:   https://github.com/oh-my-fish/theme-default/graphs/contributors
-[omf-link]:       https://www.github.com/fish-shell/oh-my-fish
+[mar-link]:       https://www.github.com/fish-shell/oh-my-fish
 
 [license-badge]:  https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square
 [travis-badge]:   http://img.shields.io/travis/oh-my-fish/theme-default.svg?style=flat-square
@@ -2758,25 +2758,25 @@ set theme_display_rbenv_with_gemfile_only 'yes'
 fisher i lambda
 ```
 
-####### [Oh-My-Fish]
+####### [Marina]
 
 ```fish
-omf install lambda
+mar install lambda
 ```
 
 [THEMES-NAMESPACE-lambda-Fisherman]: https://github.com/fisherman/fisherman
-[Oh-My-Fish]: https://github.com/oh-my-fish/oh-my-fish
+[Marina]: https://github.com/oh-my-fish/oh-my-fish
 
 
 # [lavender](https://github.com/tungpun/fish-theme-lavender)
 <img src="https://cdn.rawgit.com/oh-my-fish/oh-my-fish/e4f1c2e0219a17e2c748b824004c8d0b38055c16/docs/logo.svg" align="left" width="144px" height="144px"/>
 
 ###### lavender
-> A elegant theme for [Oh My Fish][omf-link].
+> A elegant theme for [Marina][mar-link].
 
 [![MIT License](https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square)](/LICENSE)
 [![Fish Shell Version](https://img.shields.io/badge/fish-v2.2.0-007EC7.svg?style=flat-square)](https://fishshell.com)
-[![Oh My Fish Framework](https://img.shields.io/badge/Oh%20My%20Fish-Framework-007EC7.svg?style=flat-square)](https://www.github.com/oh-my-fish/oh-my-fish)
+[![Marina Framework](https://img.shields.io/badge/Oh%20My%20Fish-Framework-007EC7.svg?style=flat-square)](https://www.github.com/oh-my-fish/oh-my-fish)
 
 <br/>
 
@@ -2784,7 +2784,7 @@ omf install lambda
 #### Install
 
 ```fish
-$ omf install lavender
+$ mar install lavender
 ```
 
 
@@ -2813,7 +2813,7 @@ Based on clearance theme. Display the following bits on the left:
 [THEMES-NAMESPACE-lavender-mit]:            https://opensource.org/licenses/MIT
 [THEMES-NAMESPACE-lavender-author]:         https://github.com/tungpun/
 [THEMES-NAMESPACE-lavender-contributors]:   https://github.com/tungpun/fish-theme-lavender/graphs/contributors
-[omf-link]:       https://www.github.com/oh-my-fish/oh-my-fish
+[mar-link]:       https://www.github.com/oh-my-fish/oh-my-fish
 
 [license-badge]:  https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square
 
@@ -2831,7 +2831,7 @@ such rainbow, wow.
 Using [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish):
 
 ```Bash
-omf install lolfish
+mar install lolfish
 ```
 #### Less Easy Install
 
@@ -2882,7 +2882,7 @@ possibly the dumbest theme for oh-my-fish
 how it's structured: `{directory name} > {prompt}`
 
 ```fish
-$ omf install mokou
+$ mar install mokou
 ```
 
 [MIT][mit] © [tentakel][author] et [al][THEMES-NAMESPACE-mokou-contributors]
@@ -2891,7 +2891,7 @@ $ omf install mokou
 [THEMES-NAMESPACE-mokou-mit]:            http://opensource.org/licenses/MIT
 [THEMES-NAMESPACE-mokou-author]:         http://github.com/tentakel
 [THEMES-NAMESPACE-mokou-contributors]:   https://github.com/tentakel/mokou/graphs/contributors
-[omf-link]:       https://www.github.com/oh-my-fish/oh-my-fish
+[mar-link]:       https://www.github.com/oh-my-fish/oh-my-fish
 
 
 # [mtahmed](https://github.com/oh-my-fish/theme-mtahmed)
@@ -2926,7 +2926,7 @@ A minimalist fish theme which displays git branch and status information.
 * Git branch and dirty state (if applicable)
 
 
-# [nelsonjchen](https://github.com/nelsonjchen/omf-theme-nelsonjchen)
+# [nelsonjchen](https://github.com/nelsonjchen/mar-theme-nelsonjchen)
 <div align="center">
   <a href="http://github.com/oh-my-fish/oh-my-fish">
   <img width=90px  src="https://cloud.githubusercontent.com/assets/8317250/8510172/f006f0a4-230f-11e5-98b6-5c2e3c87088f.png">
@@ -2934,12 +2934,12 @@ A minimalist fish theme which displays git branch and status information.
 </div>
 <br>
 
-> nelsonjchen theme for [Oh My Fish][omf-link]. Based on re5et in Oh-My-Zsh.
+> nelsonjchen theme for [Marina][mar-link]. Based on re5et in Oh-My-Zsh.
 
 #### Install
 
 ```fish
-$ omf u nelsonjchen
+$ mar u nelsonjchen
 ```
 
 #### Features and Differences
@@ -2974,17 +2974,17 @@ src="https://cloud.githubusercontent.com/assets/5363/12106487/fe8b3c30-b314-11e5
 
 [THEMES-NAMESPACE-nelsonjchen-mit]:            http://opensource.org/licenses/MIT
 [THEMES-NAMESPACE-nelsonjchen-author]:         http://github.com/nelsonjchen
-[THEMES-NAMESPACE-nelsonjchen-contributors]:   https://github.com/nelsonjchen/omf-theme-nelsonjchen/graphs/contributors
-[omf-link]:       https://www.github.com/oh-my-fish/oh-my-fish
+[THEMES-NAMESPACE-nelsonjchen-contributors]:   https://github.com/nelsonjchen/mar-theme-nelsonjchen/graphs/contributors
+[mar-link]:       https://www.github.com/oh-my-fish/oh-my-fish
 
 [license-badge]:  https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square
-[travis-badge]:   http://img.shields.io/travis/nelsonjchen/omf-theme-nelsonjchen.svg?style=flat-square
+[travis-badge]:   http://img.shields.io/travis/nelsonjchen/mar-theme-nelsonjchen.svg?style=flat-square
 
 
 # [neolambda](https://github.com/ipatch/theme-neolambda)
 ### NeoLambda
 
-> The unofficial fork of the [omf](https://github.com/oh-my-fish/oh-my-fish) [lambda](https://github.com/hasanozgan/theme-lambda) theme
+> The unofficial fork of the [mar](https://github.com/oh-my-fish/oh-my-fish) [lambda](https://github.com/hasanozgan/theme-lambda) theme
 
 [![MIT License](https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square)](/LICENSE)
 [![Fish Shell Version](https://img.shields.io/badge/fish-v2.2.0-007EC7.svg?style=flat-square)](http://fishshell.com)
@@ -3014,12 +3014,12 @@ set -gx VIRTUAL_ENV_DISABLE_PROMPT 1
 
 #### Install
 
-<a id="install-omf"></a>
+<a id="install-mar"></a>
 
-##### [Oh-My-Fish](https://github.com/oh-my-fish/oh-my-fish)
+##### [Marina](https://github.com/oh-my-fish/oh-my-fish)
 
 ```shell
-omf install neolambda
+mar install neolambda
 ```
 
 #### TODOs
@@ -3062,15 +3062,15 @@ This theme is based loosely on [agnoster](https://gist.github.com/agnoster/37128
 If you see a colored anchor icon instead of the white one, this is because your system font is lacking the anchor icon, and iTerm defaults to the Apple Emoji Font. To get the right icon, either add it to your current font, or chose a powerline font that has it (like Meslo for Powerline, available in https://github.com/powerline/fonts), and select it for your Non-ASCII font.
 
 
-# [one](https://github.com/rdev/omf-theme-one)
+# [one](https://github.com/rdev/mar-theme-one)
 <img src="https://cdn.rawgit.com/oh-my-fish/oh-my-fish/e4f1c2e0219a17e2c748b824004c8d0b38055c16/docs/logo.svg" align="left" width="144px" height="144px"/>
 
 ###### One v2
-> A theme for [Oh My Fish](https://github.com/oh-my-fish/oh-my-fish).
+> A theme for [Marina](https://github.com/oh-my-fish/oh-my-fish).
 
 [![MIT License](https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square)](/LICENSE)
 [![Fish Shell Version](https://img.shields.io/badge/fish-v2.2.0-007EC7.svg?style=flat-square)](https://fishshell.com)
-[![Oh My Fish Framework](https://img.shields.io/badge/Oh%20My%20Fish-Framework-007EC7.svg?style=flat-square)](https://www.github.com/oh-my-fish/oh-my-fish)
+[![Marina Framework](https://img.shields.io/badge/Oh%20My%20Fish-Framework-007EC7.svg?style=flat-square)](https://www.github.com/oh-my-fish/oh-my-fish)
 
 <br/>
 
@@ -3078,7 +3078,7 @@ If you see a colored anchor icon instead of the white one, this is because your 
 #### Install
 
 ```fish
-$ omf install one
+$ mar install one
 ```
 
 ##### Note for macOS users
@@ -3129,13 +3129,13 @@ Aesthetic stolen from [Pure](https://github.com/sindresorhus/pure)
 </div>
 <br>
 
-> pastfish theme for [Oh My Fish][omf-link].
+> pastfish theme for [Marina][mar-link].
 
 #### Install
 
 
 ```fish
-$ omf u pastfish
+$ mar u pastfish
 ```
 
 #### Features
@@ -3158,7 +3158,7 @@ $ omf u pastfish
 [THEMES-NAMESPACE-pastfish-mit]:            http://opensource.org/licenses/MIT
 [THEMES-NAMESPACE-pastfish-author]:         http://github.com/chgu82837
 [THEMES-NAMESPACE-pastfish-contributors]:   https://github.com/chgu82837/pastfish/graphs/contributors
-[omf-link]:       https://www.github.com/oh-my-fish/oh-my-fish
+[mar-link]:       https://www.github.com/oh-my-fish/oh-my-fish
 
 [license-badge]:  https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square
 [travis-badge]:   http://img.shields.io/travis/chgu82837/pastfish.svg?style=flat-square
@@ -3177,11 +3177,11 @@ This is similar to godfat's gitstatus theme, but mainly includes red, white, cya
 <img src="https://cdn.rawgit.com/oh-my-fish/oh-my-fish/e4f1c2e0219a17e2c748b824004c8d0b38055c16/docs/logo.svg" align="left" width="144px" height="144px"/>
 
 ###### 🥧 πie
-> A theme for [Oh My Fish][omf-link].
+> A theme for [Marina][mar-link].
 
 [![MIT License](https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square)](/LICENSE)
 [![Fish Shell Version](https://img.shields.io/badge/fish-v2.2.0-007EC7.svg?style=flat-square)](https://fishshell.com)
-[![Oh My Fish Framework](https://img.shields.io/badge/Oh%20My%20Fish-Framework-007EC7.svg?style=flat-square)](https://www.github.com/oh-my-fish/oh-my-fish)
+[![Marina Framework](https://img.shields.io/badge/Oh%20My%20Fish-Framework-007EC7.svg?style=flat-square)](https://www.github.com/oh-my-fish/oh-my-fish)
 
 
 <br/>
@@ -3191,8 +3191,8 @@ A minimalist developer-friendly shell prompt for fish shell
 #### Install
 
 ```fish
-$ omf install pie
-$ omf theme pie
+$ mar install pie
+$ mar theme pie
 ```
 
 #### Features
@@ -3225,7 +3225,7 @@ $ omf theme pie
 [THEMES-NAMESPACE-pie-mit]:            https://opensource.org/licenses/MIT
 [THEMES-NAMESPACE-pie-author]:         https://github.com/grissius
 [THEMES-NAMESPACE-pie-contributors]:   https://github.com/grissius/theme-pie/graphs/contributors
-[omf-link]:       https://www.github.com/oh-my-fish/oh-my-fish
+[mar-link]:       https://www.github.com/oh-my-fish/oh-my-fish
 
 [license-badge]:  https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square
 
@@ -3427,12 +3427,12 @@ Based on the zsh theme [pygmalion](https://github.com/robbyrussell/oh-my-zsh/wik
 <img src="https://cdn.rawgit.com/oh-my-fish/oh-my-fish/e4f1c2e0219a17e2c748b824004c8d0b38055c16/docs/logo.svg" align="left" width="144px" height="144px"/>
 
 ###### random
-> A 'theme' for [Oh My Fish][omf-link] that loads a random theme.
+> A 'theme' for [Marina][mar-link] that loads a random theme.
 
 
 [![MIT License](https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square)](/LICENSE)
 [![Fish Shell Version](https://img.shields.io/badge/fish-v2.2.0-007EC7.svg?style=flat-square)](https://fishshell.com)
-[![Oh My Fish Framework](https://img.shields.io/badge/Oh%20My%20Fish-Framework-007EC7.svg?style=flat-square)](https://www.github.com/oh-my-fish/oh-my-fish)
+[![Marina Framework](https://img.shields.io/badge/Oh%20My%20Fish-Framework-007EC7.svg?style=flat-square)](https://www.github.com/oh-my-fish/oh-my-fish)
 
 <br/>
 
@@ -3440,7 +3440,7 @@ Based on the zsh theme [pygmalion](https://github.com/robbyrussell/oh-my-zsh/wik
 #### Install
 
 ```fish
-$ omf install random
+$ mar install random
 ```
 
 
@@ -3452,7 +3452,7 @@ $ omf install random
 [THEMES-NAMESPACE-random-mit]:            https://opensource.org/licenses/MIT
 [THEMES-NAMESPACE-random-author]:         https://github.com/{{USER}}
 [THEMES-NAMESPACE-random-contributors]:   https://github.com/{{USER}}/theme-random/graphs/contributors
-[omf-link]:       https://www.github.com/oh-my-fish/oh-my-fish
+[mar-link]:       https://www.github.com/oh-my-fish/oh-my-fish
 
 [license-badge]:  https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square
 
@@ -3506,17 +3506,17 @@ Something is fishy here! If you are not inside a Git working directory, your pet
 
 # [redfish](https://github.com/redxtech/redfish)
 ### [redfish][repo-link]
-> A theme for [Oh My Fish][omf-link].
+> A theme for [Marina][mar-link].
 
 [![MIT License](https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square)](/LICENSE)
 [![Fish Shell Version](https://img.shields.io/badge/fish-v2.2.0-007EC7.svg?style=flat-square)](https://fishshell.com)
-[![Oh My Fish Framework](https://img.shields.io/badge/Oh%20My%20Fish-Framework-007EC7.svg?style=flat-square)](https://www.github.com/oh-my-fish/oh-my-fish)
+[![Marina Framework](https://img.shields.io/badge/Oh%20My%20Fish-Framework-007EC7.svg?style=flat-square)](https://www.github.com/oh-my-fish/oh-my-fish)
 
 
 #### Install
 
 ```fish
-$ omf install redfish
+$ mar install redfish
 ```
 
 #### Features
@@ -3542,7 +3542,7 @@ $ omf install redfish
 
 [THEMES-NAMESPACE-redfish-mit]:            https://opensource.org/licenses/MIT
 [THEMES-NAMESPACE-redfish-author]:         https://github.com/redxtech
-[omf-link]:       https://github.com/oh-my-fish/oh-my-fish
+[mar-link]:       https://github.com/oh-my-fish/oh-my-fish
 [repo-link]:      https://github.com/redxtech/redfish
 
 [license-badge]:  https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square
@@ -3552,11 +3552,11 @@ $ omf install redfish
 <img src="https://cdn.rawgit.com/oh-my-fish/oh-my-fish/e4f1c2e0219a17e2c748b824004c8d0b38055c16/docs/logo.svg" align="left" width="144px" height="144px"/>
 
 ###### rider
-> A theme for [Oh My Fish][omf-link].
+> A theme for [Marina][mar-link].
 
 [![MIT License](https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square)](/LICENSE)
 [![Fish Shell Version](https://img.shields.io/badge/fish-v2.2.0-007EC7.svg?style=flat-square)](https://fishshell.com)
-[![Oh My Fish Framework](https://img.shields.io/badge/Oh%20My%20Fish-Framework-007EC7.svg?style=flat-square)](https://www.github.com/oh-my-fish/oh-my-fish)
+[![Marina Framework](https://img.shields.io/badge/Oh%20My%20Fish-Framework-007EC7.svg?style=flat-square)](https://www.github.com/oh-my-fish/oh-my-fish)
 
 <br/>
 
@@ -3564,7 +3564,7 @@ $ omf install redfish
 #### Install
 
 ```fish
-$ omf install rider
+$ mar install rider
 ```
 
 
@@ -3592,7 +3592,7 @@ $ omf install rider
 [THEMES-NAMESPACE-rider-mit]:            https://opensource.org/licenses/MIT
 [THEMES-NAMESPACE-rider-author]:         https://github.com/rideron89
 [THEMES-NAMESPACE-rider-contributors]:   https://github.com/rideron89/rider-theme/graphs/contributors
-[omf-link]:       https://www.github.com/oh-my-fish/oh-my-fish
+[mar-link]:       https://www.github.com/oh-my-fish/oh-my-fish
 
 [license-badge]:  https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square
 
@@ -3652,9 +3652,9 @@ If you are using a package manager, you have the following options:
   ```shell
   fisher add isacikgoz/sashimi
   ```
-- Or, if you prefer [Oh My Fish!](https://github.com/oh-my-fish/oh-my-fish):
+- Or, if you prefer [Marina!](https://github.com/oh-my-fish/oh-my-fish):
   ```shell
-  omf install sashimi
+  mar install sashimi
   ```
 
 #### Credits
@@ -3684,7 +3684,7 @@ version, NodeJS version, Git information and last command execution time.
 
 ###### Configuration:
 
-The following options can be added to `~/.config/fish/conf.d/omf.fish` to change
+The following options can be added to `~/.config/fish/conf.d/mar.fish` to change
 the appearance and behavior of left prompt.
 
  * To display current Rust version:
@@ -3830,18 +3830,18 @@ src="https://cdn.rawgit.com/oh-my-fish/oh-my-fish/e4f1c2e0219a17e2c748b824004c8d
 align="left" width="144px" height="144px"/>
 
 ###### simple-ass-prompt
-> A theme for [Oh My Fish][omf-link].
+> A theme for [Marina][mar-link].
 
 [![MIT License](https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square)](/LICENSE)
 [![Fish Shell Version](https://img.shields.io/badge/fish-v2.2.0-007EC7.svg?style=flat-square)](http://fishshell.com)
-[![Oh My Fish Framework](https://img.shields.io/badge/Oh%20My%20Fish-Framework-007EC7.svg?style=flat-square)](https://www.github.com/oh-my-fish/oh-my-fish)
+[![Marina Framework](https://img.shields.io/badge/Oh%20My%20Fish-Framework-007EC7.svg?style=flat-square)](https://www.github.com/oh-my-fish/oh-my-fish)
 
 <br/>
 
 #### Install
 
 ```fish
-$ omf install simple-ass-prompt
+$ mar install simple-ass-prompt
 ```
 
 #### Features
@@ -3894,7 +3894,7 @@ set -g simple_ass_prompt_greeting MyGreeting
 [THEMES-NAMESPACE-simple-ass-prompt-mit]:            http://opensource.org/licenses/MIT
 [THEMES-NAMESPACE-simple-ass-prompt-author]:         http://github.com/lfiolhais
 [THEMES-NAMESPACE-simple-ass-prompt-contributors]:   https://github.com/lfiolhais/simple_ass_prompt/graphs/contributors
-[omf-link]:       https://www.github.com/oh-my-fish/oh-my-fish
+[mar-link]:       https://www.github.com/oh-my-fish/oh-my-fish
 [THEMES-NAMESPACE-simple-ass-prompt-mths]: https://github.com/mathiasbynens/dotfiles
 [license-badge]:  https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square
 [THEMES-NAMESPACE-simple-ass-prompt-vf]: https://github.com/adambrenecki/virtualfish
@@ -3915,15 +3915,15 @@ Screenshots:
 
 
 
-# [slacker](https://github.com/maqboolkhan/omf-theme-slacker)
+# [slacker](https://github.com/maqboolkhan/mar-theme-slacker)
 <img src="https://cdn.rawgit.com/oh-my-fish/oh-my-fish/e4f1c2e0219a17e2c748b824004c8d0b38055c16/docs/logo.svg" align="left" width="144px" height="144px"/>
 
 ###### slacker
-> A theme for [Oh My Fish][omf-link].
+> A theme for [Marina][mar-link].
 
 [![MIT License](https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square)](/LICENSE)
 [![Fish Shell Version](https://img.shields.io/badge/fish-v2.2.0-007EC7.svg?style=flat-square)](https://fishshell.com)
-[![Oh My Fish Framework](https://img.shields.io/badge/Oh%20My%20Fish-Framework-007EC7.svg?style=flat-square)](https://www.github.com/oh-my-fish/oh-my-fish)
+[![Marina Framework](https://img.shields.io/badge/Oh%20My%20Fish-Framework-007EC7.svg?style=flat-square)](https://www.github.com/oh-my-fish/oh-my-fish)
 
 <br/>
 
@@ -3931,7 +3931,7 @@ Screenshots:
 #### Install
 
 ```fish
-$ omf install slacker
+$ mar install slacker
 ```
 
 
@@ -3943,7 +3943,7 @@ $ omf install slacker
 #### Screenshot
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/maqboolkhan/omf-theme-slacker/master/1.png">
+<img src="https://raw.githubusercontent.com/maqboolkhan/mar-theme-slacker/master/1.png">
 </p>
 
 
@@ -3954,21 +3954,21 @@ $ omf install slacker
 
 [THEMES-NAMESPACE-slacker-mit]:            https://opensource.org/licenses/MIT
 [THEMES-NAMESPACE-slacker-author]:         https://github.com/{{USER}}
-[omf-link]:       https://www.github.com/oh-my-fish/oh-my-fish
+[mar-link]:       https://www.github.com/oh-my-fish/oh-my-fish
 
 [license-badge]:  https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square
 
 
-# [slavic-cat](https://github.com/yangwao/omf-theme-slavic-cat)
+# [slavic-cat](https://github.com/yangwao/mar-theme-slavic-cat)
 ### Slavic Cat
 
 A fish (shell) theme with a Slavic cat and a rainbow that signifies git status.
 
 
-[![Oh My Fish](https://img.shields.io/badge/Framework-Oh_My_Fish-blue.svg?style=flat)](https://github.com/oh-my-fish/oh-my-fish)
+[![Marina](https://img.shields.io/badge/Framework-Oh_My_Fish-blue.svg?style=flat)](https://github.com/oh-my-fish/oh-my-fish)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](/LICENSE)
 
-![Slavic cat in action](https://github.com/yangwao/omf-theme-slavic-cat/blob/master/screenshot.png?raw=true)
+![Slavic cat in action](https://github.com/yangwao/mar-theme-slavic-cat/blob/master/screenshot.png?raw=true)
 
 
 #### Instalation
@@ -3976,11 +3976,11 @@ A fish (shell) theme with a Slavic cat and a rainbow that signifies git status.
 ###### Requirements
 * [Fish shell](https://github.com/fish-shell/fish-shell) - a smart and user-friendly command line
 shell for OS X, Linux, and the rest of the family
-* [Oh My Fish](https://github.com/oh-my-fish/oh-my-fish) - The Fishshell Framework
+* [Marina](https://github.com/oh-my-fish/oh-my-fish) - The Fishshell Framework
 
-Once Oh My Fish is installed:
+Once Marina is installed:
 
-    omf install slavic-cat
+    mar install slavic-cat
     
 [forked from Toaster](https://github.com/oh-my-fish/theme-toaster)
 
@@ -3999,11 +3999,11 @@ Once Oh My Fish is installed:
 <img src="https://cdn.rawgit.com/oh-my-fish/oh-my-fish/e4f1c2e0219a17e2c748b824004c8d0b38055c16/docs/logo.svg" align="left" width="144px" height="144px"/>
 
 ###### theme-solarfish
-> A simple, git-aware, two-line theme for [Oh My Fish][omf-link]. Based off of [simple-ass-prompt](https://github.com/lfiolhais/theme-simple-ass-prompt) and optimized for [solarized](https://ethanschoonover.com/solarized/).
+> A simple, git-aware, two-line theme for [Marina][mar-link]. Based off of [simple-ass-prompt](https://github.com/lfiolhais/theme-simple-ass-prompt) and optimized for [solarized](https://ethanschoonover.com/solarized/).
 
 [![MIT License](https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square)](/LICENSE)
 [![Fish Shell Version](https://img.shields.io/badge/fish-v3.0.0-007EC7.svg?style=flat-square)](https://fishshell.com)
-[![Oh My Fish Framework](https://img.shields.io/badge/Oh%20My%20Fish-Framework-007EC7.svg?style=flat-square)](https://www.github.com/oh-my-fish/oh-my-fish)
+[![Marina Framework](https://img.shields.io/badge/Oh%20My%20Fish-Framework-007EC7.svg?style=flat-square)](https://www.github.com/oh-my-fish/oh-my-fish)
 
 <br/>
 
@@ -4011,7 +4011,7 @@ Once Oh My Fish is installed:
 #### Install
 
 ```fish
-$ omf install theme-solarfish
+$ mar install theme-solarfish
 ```
 
 
@@ -4058,7 +4058,7 @@ set -g theme_current_folder_path yes
 
 [THEMES-NAMESPACE-solarfish-mit]:            https://opensource.org/licenses/MIT
 [THEMES-NAMESPACE-solarfish-author]:         https://github.com/thesilican
-[omf-link]:       https://www.github.com/oh-my-fish/oh-my-fish
+[mar-link]:       https://www.github.com/oh-my-fish/oh-my-fish
 
 [license-badge]:  https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square
 
@@ -4180,10 +4180,10 @@ To get spacefish working correctly, you will need:
 $ fisher install matchai/spacefish
 ```
 
-##### [Oh My Fish!](https://github.com/oh-my-fish/oh-my-fish)
+##### [Marina!](https://github.com/oh-my-fish/oh-my-fish)
 
 ```fish
-$ omf install spacefish
+$ mar install spacefish
 ```
 
 #### Customization
@@ -4262,12 +4262,12 @@ MIT © [Matan Kushner](http://matchai.dev)
 </div>
 <br>
 
-> 🍣 Sushi theme for [Oh My Fish][omf-link].
+> 🍣 Sushi theme for [Marina][mar-link].
 
 #### Install
 
 ```fish
-$ omf install sushi
+$ mar install sushi
 ```
 
 #### Features
@@ -4303,7 +4303,7 @@ $ omf install sushi
 [THEMES-NAMESPACE-sushi-mit]:            http://opensource.org/licenses/MIT
 [THEMES-NAMESPACE-sushi-author]:         http://github.com/umayr
 [THEMES-NAMESPACE-sushi-contributors]:   https://github.com/umayr/sushi/graphs/contributors
-[omf-link]:       https://www.github.com/oh-my-fish/oh-my-fish
+[mar-link]:       https://www.github.com/oh-my-fish/oh-my-fish
 
 [license-badge]:  https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square
 
@@ -4583,9 +4583,9 @@ Theme based in [eclm](https://github.com/oh-my-fish/oh-my-fish/blob/master/docs/
 <img src="http://i.imgur.com/1ZjM4j5.png" style="text-align: center;">
 
 ##### Install
-``` omf install wolf-theme ```
+``` mar install wolf-theme ```
 
-``` omf theme wolf-theme ```
+``` mar theme wolf-theme ```
 
 ##### Team
 [![Igor Oliveira](https://avatars0.githubusercontent.com/u/14060827?v=3&s=70)](https://github.com/devigor) |
@@ -4625,11 +4625,11 @@ See https://github.com/mcansh/zeit-fish-theme for details
 <img src="https://cdn.rawgit.com/oh-my-fish/oh-my-fish/e4f1c2e0219a17e2c748b824004c8d0b38055c16/docs/logo.svg" align="left" width="144px" height="144px"/>
 
 ###### zephyr
-> A theme for [Oh My Fish][omf-link].
+> A theme for [Marina][mar-link].
 
 [![MIT License](https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square)](/LICENSE)
 [![Fish Shell Version](https://img.shields.io/badge/fish-v2.2.0-007EC7.svg?style=flat-square)](https://fishshell.com)
-[![Oh My Fish Framework](https://img.shields.io/badge/Oh%20My%20Fish-Framework-007EC7.svg?style=flat-square)](https://www.github.com/oh-my-fish/oh-my-fish)
+[![Marina Framework](https://img.shields.io/badge/Oh%20My%20Fish-Framework-007EC7.svg?style=flat-square)](https://www.github.com/oh-my-fish/oh-my-fish)
 
 <br/>
 
@@ -4637,8 +4637,8 @@ See https://github.com/mcansh/zeit-fish-theme for details
 #### Install
 
 ```fish
-omf install https://github.com/komarnitskyi/theme-zephyr
-omf theme zephyr
+mar install https://github.com/komarnitskyi/theme-zephyr
+mar theme zephyr
 ```
 
 #### Requirements
@@ -4648,7 +4648,7 @@ omf theme zephyr
 #### Update
 
 ```fish
-omf update zephyr
+mar update zephyr
 ```
 
 
@@ -4677,7 +4677,7 @@ omf update zephyr
 [THEMES-NAMESPACE-zephyr-mit]:            https://opensource.org/licenses/MIT
 [THEMES-NAMESPACE-zephyr-author]:         https://github.com/komarnitskyi
 [THEMES-NAMESPACE-zephyr-contributors]:   https://github.com/komarnitskyi/theme-zephyr/graphs/contributors
-[omf-link]:       https://www.github.com/oh-my-fish/oh-my-fish
+[mar-link]:       https://www.github.com/oh-my-fish/oh-my-fish
 
 [license-badge]:  https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square
 

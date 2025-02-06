@@ -3,7 +3,7 @@
 
 # Paquetes 
 
-> La documentación de Oh My Fish&nbsp;&bull;&nbsp;También disponible en
+> La documentación de Marina&nbsp;&bull;&nbsp;También disponible en
 > <a href="../en-US/Packages.md">🇺🇸</a>
 > <a href="../nl-NL/Packages.md">🇳🇱</a>
 > <a href="../pt-BR/Packages.md">🇧🇷</a>
@@ -18,13 +18,13 @@
 Para aprender en la creación de paquetes, vamos a crear un nuevo paquete que mostrará un comando `hello_world` para su _shell_. Los nombres de los paquetes
 solo pueden contener letras minúsculas y guiones para separar palabras.
 
-Oh My Fish puede crear el esqueleto de una estructura de un paquete para usted. Para ello utilice el comando `omf new`:
+Marina puede crear el esqueleto de una estructura de un paquete para usted. Para ello utilice el comando `mar new`:
 
 ```fish
-$ omf new plugin hello_world
+$ mar new plugin hello_world
 ```
 
-> Utilice `omf new theme my_theme_name` para crear un nuevo tema.
+> Utilice `mar new theme my_theme_name` para crear un nuevo tema.
 
 La utilidad cambia el directorio actual al paquete recién creado:
 
@@ -59,7 +59,7 @@ considere utilizar como prefijo de funciones privadas dos guiones bajos (e.g. `_
 
 # Hooks
 
-Oh My Fish ofrece un sistema de "hooks" que le permite escribir scripts para su paquete que son ejecutados cuando ocurre otro evento interesante. Los
+Marina ofrece un sistema de "hooks" que le permite escribir scripts para su paquete que son ejecutados cuando ocurre otro evento interesante. Los
 paquetes puede utilizar estos _hooks_ para ofrecer una instalación avanzada, una gestión de recursos personalizada, etc. Los _hooks_ son scripts normales de
 Fish nombrados después del evento por el que son lanzados. La mayoría de _hooks_ se encuentran en un directorio `hooks` dentro del directorio del proyecto
 del paquete.
@@ -67,7 +67,7 @@ del paquete.
 >Los _hooks_ que son llamados después del tiempo de arranque (`init.fish` y `key_bindings.fish`) pueden ralentizar el arranque de la _shell_. ¡Asegúrese de
 >evitar utilizar código lento en el proceso de arranque! También, si su paquete no necesita de un archivo hook, asegúrese de eliminarlo.
 
-El directorio de trabajo dentro de un hook está siempre establecido en la raíz del directorio del paquete. Los hooks Oh My Fish actualmente admitidos están
+El directorio de trabajo dentro de un hook está siempre establecido en la raíz del directorio del paquete. Los hooks Marina actualmente admitidos están
 listados a continuación:
 
 ## `init`
@@ -98,7 +98,7 @@ Si su paquete o sistema utiliza atajos de teclado, asegúrese de establecerlos e
 en `key_bindings.fish` en la raíz  del directorio del paquete. En este hook puede utilizar libremente el comando [`bind`][fish-bind] para definir los atajos
 de teclado personalizados.
 
->¡Los temas también pueden definir atajos de teclado! Oh My Fish volverá a cargar los atajos de teclado cuando cambie entre los temas.
+>¡Los temas también pueden definir atajos de teclado! Marina volverá a cargar los atajos de teclado cuando cambie entre los temas.
 
 ## `install`
 
@@ -124,7 +124,7 @@ Este hook es útil para actualizar submódulos de Git o para comprobar si existe
 
 ## `uninstall`
 
-El hook `uninstall` será lanzado antes de que un paquete sea eliminado mediante `omf remove <pkg>`. Los scripts para este hook deberán estar ubicados en `hooks/uninstall.fish`.
+El hook `uninstall` será lanzado antes de que un paquete sea eliminado mediante `mar remove <pkg>`. Los scripts para este hook deberán estar ubicados en `hooks/uninstall.fish`.
 
 Dentro de este hook, puede acceder a dos variables relacionadas con el paquete:
 
@@ -143,4 +143,4 @@ archivo README de ese repositorio para encontrar instrucciones de cómo añadir 
 
 
 [fish-bind]: http://fishshell.com/docs/current/commands.html#bind
-[omf-pulls-link]: https://github.com/oh-my-fish/oh-my-fish/pulls
+[mar-pulls-link]: https://github.com/oh-my-fish/oh-my-fish/pulls

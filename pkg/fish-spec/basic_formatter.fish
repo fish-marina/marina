@@ -38,7 +38,7 @@ function __fish-spec.spec_error -e spec_error
   echo -e "\n\nFailure: $__current_spec_name"
 
   if not set -q __current_spec_quiet
-    echo (omf::em)  $__current_spec_output(omf::off)
+    echo (mar::em)  $__current_spec_output(mar::off)
   end
 
   set -g __any_spec_failed true

@@ -3,7 +3,7 @@
 
 # FAQ
 
-> Oh My Fish Documentation&nbsp;&bull;&nbsp;Also in
+> Marina Documentation&nbsp;&bull;&nbsp;Also in
 > <a href="../es-ES/FAQ.md">🇪🇸</a>
 > <a href="../nl-NL/FAQ.md">🇳🇱</a>
 > <a href="../pt-BR/FAQ.md">🇧🇷</a>
@@ -16,22 +16,22 @@
 Thanks for taking the time to read this FAQ. Feel free to create a new issue if your question is not answered here.
 
 
-## What is Oh My Fish and why do I want it?
+## What is Marina and why do I want it?
 
-Oh My Fish is a _framework_ for the [Fishshell](http://fishshell.com/). It helps you manage your configuration, themes and packages.
-
-
-## What do I need to know to use Oh My Fish?
-
-_Nothing_. You can install Oh My Fish and keep using Fish as usual. When you are ready to learn more just type `omf help`.
+Marina is a _framework_ for the [Fishshell](http://fishshell.com/). It helps you manage your configuration, themes and packages.
 
 
-## What are Oh My Fish packages?
+## What do I need to know to use Marina?
 
-Oh My Fish packages are themes or plugins written in fish that extend the shell core functionality, run code during initialization, add auto completion for known utilities, etc.
+_Nothing_. You can install Marina and keep using Fish as usual. When you are ready to learn more just type `mar help`.
 
 
-## What kind of Oh My Fish packages are there?
+## What are Marina packages?
+
+Marina packages are themes or plugins written in fish that extend the shell core functionality, run code during initialization, add auto completion for known utilities, etc.
+
+
+## What kind of Marina packages are there?
 
 There are roughly 3 kinds of packages:
 
@@ -42,20 +42,20 @@ There are roughly 3 kinds of packages:
 3. Traditional shell utilities. For example [`pkg-copy`](https://github.com/oh-my-fish/pkg-copy), a clipboard utility compatible across Linux and OSX.
 
 
-## What does Oh My Fish do exactly?
+## What does Marina do exactly?
 
-+ Run `$OMF_CONFIG/before.init.fish` if available.
++ Run `$MAR_CONFIG/before.init.fish` if available.
 
-+ Autoload installed packages and themes under `$OMF_PATH/`.
++ Autoload installed packages and themes under `$MAR_PATH/`.
 
-+ Autoload your config path. `~/.config/omf` by default, but configurable via `$OMF_CONFIG`.
++ Autoload your config path. `~/.config/mar` by default, but configurable via `$MAR_CONFIG`.
 
-+ Autoload any `functions` directory under `$OMF_PATH` and `$OMF_CONFIG`
++ Autoload any `functions` directory under `$MAR_PATH` and `$MAR_CONFIG`
 
-+ Run `$OMF_CONFIG/init.fish` if available.
++ Run `$MAR_CONFIG/init.fish` if available.
 
 
-## How can I upgrade from an existing Oh My Fish installation?
+## How can I upgrade from an existing Marina installation?
 
 > :warning: Remember to backup your dotfiles and other sensitive data first.
 

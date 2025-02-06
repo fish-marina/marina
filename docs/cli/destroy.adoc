@@ -1,4 +1,4 @@
-Uninstall Oh My Fish.
+Uninstall Marina.
 
 == USAGE
-  omf destroy
+  mar destroy

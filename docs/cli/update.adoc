@@ -1,18 +1,18 @@
-Update Oh My Fish and packages.
+Update Marina and packages.
 
 == USAGE
-  omf update [<package1> [<package2> [...]]]
+  mar update [<package1> [<package2> [...]]]
 
 == DESCRIPTION
-Updates Oh My Fish, package repositories, and installed packages.
+Updates Marina, package repositories, and installed packages.
 
 Each package name that is given will be updated. For example, to update the packages `bobthefish` and `direnv`, run:
 
-  omf update bobthefish direnv
+  mar update bobthefish direnv
 
-The special package name `omf` will cause Oh My Fish to update itself. This can be combined with other package names.
+The special package name `mar` will cause Marina to update itself. This can be combined with other package names.
 
-If no arguments are given, all installed packages will be updated along with Oh My Fish.
+If no arguments are given, all installed packages will be updated along with Marina.
 
 == ALIASES
-*omf u*, *omf up*
+*mar u*, *mar up*

@@ -3,7 +3,7 @@
 
 # FAQ
 
-> Oh My Fish Documentation&nbsp;&bull;&nbsp;Also in
+> Marina Documentation&nbsp;&bull;&nbsp;Also in
 > <a href="../en-US/FAQ.md">🇺🇸</a>
 > <a href="../es-ES/FAQ.md">🇪🇸</a>
 > <a href="../nl-NL/FAQ.md">🇳🇱</a>
@@ -16,22 +16,22 @@
 感谢您花一些时间来阅读 FAQ。如果没有从下面找到你想问的问题欢迎给我们提交新的问题(Issue)。
 
 
-## 什么是 Oh My Fish，我为什么会使用它？
+## 什么是 Marina，我为什么会使用它？
 
-Oh My Fish 是基于 [Fishshell](http://fishshell.com/) 封装的高级 _框架_。它可以帮你管理你的配置，主题和插件。
-
-
-## 使用 Oh My Fish 我需要注意什么？
-
-_什么都不需要注意_。安装 Oh My Fish 并想平时使用 Fish Shell 一样。当你需要获取更多帮助仅需要执行 `omf help`。
+Marina 是基于 [Fishshell](http://fishshell.com/) 封装的高级 _框架_。它可以帮你管理你的配置，主题和插件。
 
 
-## 什么是 Oh My Fish 包（Packages）？
+## 使用 Marina 我需要注意什么？
 
-Oh My Fish 包是使用 fish 编写的一系列主题和插件用于扩展 Shell 的核心功能，比如初始化时执行自定义代码，添加自动补全等。
+_什么都不需要注意_。安装 Marina 并想平时使用 Fish Shell 一样。当你需要获取更多帮助仅需要执行 `mar help`。
 
 
-## Oh My Fish 包大概包含哪些类型?
+## 什么是 Marina 包（Packages）？
+
+Marina 包是使用 fish 编写的一系列主题和插件用于扩展 Shell 的核心功能，比如初始化时执行自定义代码，添加自动补全等。
+
+
+## Marina 包大概包含哪些类型?
 
 目前粗略分类可以定义 3 中类型：
 
@@ -42,20 +42,20 @@ Oh My Fish 包是使用 fish 编写的一系列主题和插件用于扩展 Shell
 3. 系统增强。比如 [`pkg-copy`](https://github.com/oh-my-fish/pkg-copy)，可同时支持 Linux 和 Mac OS X 的剪切工具。
 
 
-## Oh My Fish 主要都干了什么?
+## Marina 主要都干了什么?
 
-+ 如果存在 `$OMF_CONFIG/before.init.fish`。
++ 如果存在 `$MAR_CONFIG/before.init.fish`。
 
-+ 自动加载 `$OMF_PATH/` 目录下已安装的插件和主题。
++ 自动加载 `$MAR_PATH/` 目录下已安装的插件和主题。
 
-+ 自动加载你的配置。默认路径 `~/.config/omf`，除非你自定义了 `$OMF_CONFIG` 变量。
++ 自动加载你的配置。默认路径 `~/.config/mar`，除非你自定义了 `$MAR_CONFIG` 变量。
 
-+ 自动加载 `$OMF_PATH` 和 `$OMF_CONFIG` 目录下面的所有的 `functions`
++ 自动加载 `$MAR_PATH` 和 `$MAR_CONFIG` 目录下面的所有的 `functions`
 
-+ 如果存在加载 `$OMF_CONFIG/init.fish`。
++ 如果存在加载 `$MAR_CONFIG/init.fish`。
 
 
-## 如何升级之前已安装的 Oh My Fish?
+## 如何升级之前已安装的 Marina?
 
 > :warning: 务必先备份你的 dotfiles 和其他自定义的数据。
 

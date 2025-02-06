@@ -21,7 +21,7 @@ function require
 
   # Requiring specific packages from default paths
   else
-    set package_path {$OMF_PATH,$OMF_CONFIG}/pkg*/$packages
+    set package_path {$MAR_PATH,$MAR_CONFIG}/pkg*/$packages
 
     # Exit with error if no package paths were generated
     test -z "$package_path"
@@ -51,7 +51,7 @@ function require
 
     set path (printf '/%s' $components[1..-2])
 
-    contains $path $omf_init_path
+    contains $path $mar_init_path
       and continue
 
     set package $components[-2]
@@ -74,7 +74,7 @@ function require
 
     emit init_$package $path
 
-    set -g omf_init_path $omf_init_path $path
+    set -g mar_init_path $mar_init_path $path
     emit perf:timer:finish $init
   end
 

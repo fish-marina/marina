@@ -1,10 +1,10 @@
-# Path to Oh My Fish install.
+# Path to Marina install.
 set -q XDG_DATA_HOME
-  and set -gx OMF_PATH "$XDG_DATA_HOME/omf"
-  or set -gx OMF_PATH "$HOME/.local/share/omf"
+  and set -gx MAR_PATH "$XDG_DATA_HOME/mar"
+  or set -gx MAR_PATH "$HOME/.local/share/mar"
 
-# Customize Oh My Fish configuration path.
-#set -gx OMF_CONFIG "{{OMF_CONFIG}}"
+# Customize Marina configuration path.
+#set -gx MAR_CONFIG "{{MAR_CONFIG}}"
 
-# Load oh-my-fish configuration.
-source $OMF_PATH/init.fish
+# Load marina configuration.
+source $MAR_PATH/init.fish

@@ -3,7 +3,7 @@
 
 # Pakketten
 
-> Oh My Fish-documentatie&nbsp;&bull;&nbsp;Ook beschikbaar in het
+> Marina-documentatie&nbsp;&bull;&nbsp;Ook beschikbaar in het
 > <a href="../en-US/Packages.md">🇺🇸</a>
 > <a href="../es-ES/Packages.md">🇪🇸</a>
 > <a href="../pt-BR/Packages.md">🇧🇷</a>
@@ -17,13 +17,13 @@
 
 Om pakketten te leren maken, gaat u een nieuw pakket volgens een sjabloon maken. Dit pakket bevat een `hello_world`-opdracht voor uw shell. Pakketnamen mogen alleen kleine letters en streepjes bevatten.
 
-Oh My Fish kan een pakketstructuur voor u samenstellen. Gebruik hiervoor `omf new`:
+Marina kan een pakketstructuur voor u samenstellen. Gebruik hiervoor `mar new`:
 
 ```fish
-$ omf new plugin hello_world
+$ mar new plugin hello_world
 ```
 
-> Voer `omf new theme my_theme_name` uit om thema's te maken.
+> Voer `mar new theme my_theme_name` uit om thema's te maken.
 
 Er wordt overgeschakeld van de huidige map naar die van het pakket:
 
@@ -54,11 +54,11 @@ Let op: Fish bevat geen private scope, dus als u uw pakket moet splitsen in func
 
 # Hooks
 
-Oh My Fish bevat een 'hooks'-systeem waarmee u scripts kunt maken voor uw pakket die worden uitgevoerd als andere gebeurtenissen plaatsvinden. Pakketten kunnen deze hooks gebruiken om geavanceerde installatie te bieden, aangepaste bronnen, etc. Hooks zijn eigenlijk Fish-scripts die genoemd zijn naar de gebeurtenis die ze aanroepen. De meeste hooks staan in een `hooks`-map in de projectmap van het pakket.
+Marina bevat een 'hooks'-systeem waarmee u scripts kunt maken voor uw pakket die worden uitgevoerd als andere gebeurtenissen plaatsvinden. Pakketten kunnen deze hooks gebruiken om geavanceerde installatie te bieden, aangepaste bronnen, etc. Hooks zijn eigenlijk Fish-scripts die genoemd zijn naar de gebeurtenis die ze aanroepen. De meeste hooks staan in een `hooks`-map in de projectmap van het pakket.
 
 >Hooks die worden aangeroepen tijdens het opstarten (`init.fish` en `key_bindings.fish`) kunnen het starten van de shell vertragen. Voorkom dus langzame code tijdens het starten! Als uw pakket geen hook nodig heeft, verwijder dan het bestand.
 
-De werkmap in een hook is altijd ingesteld op de hoofdmap van het pakket. De momenteel door Oh My Fish ondersteunde hooks staan hieronder:
+De werkmap in een hook is altijd ingesteld op de hoofdmap van het pakket. De momenteel door Marina ondersteunde hooks staan hieronder:
 
 ## `init`
 
@@ -84,7 +84,7 @@ Gebruik deze hook om de omgeving aan te passen, bronnen te laden, functies autom
 
 Als uw pakket of thema sneltoetsen gebruikt, stel deze dan in in de `key_bindings`-hook. Sneltoetsscripts dienen geplaatst te worden in `key_bindings.fish` in de hoofdmap van het pakket. Binnen deze hook kunt u de [`bind`][fish-bind]-opdracht vrij gebruiken om aangepaste sneltoetsen in te stellen.
 
->Thema's kunnen ook sneltoetsen bevatten! Oh My Fish herlaadt de sneltoetsen als u overschakelt naar een ander thema.
+>Thema's kunnen ook sneltoetsen bevatten! Marina herlaadt de sneltoetsen als u overschakelt naar een ander thema.
 
 ## `install`
 
@@ -110,7 +110,7 @@ Deze hook is handig voor het bijwerken van Git-submodules of controleren op nieu
 
 ## `uninstall`
 
-De `uninstall`-hook wordt aangeroepen vlak voordat een pakket wordt verwijderd middels `omf remove <pkg>`. Scripts die deze hook gebruiken dienen te worden geplaatst in `hooks/uninstall.fish`.
+De `uninstall`-hook wordt aangeroepen vlak voordat een pakket wordt verwijderd middels `mar remove <pkg>`. Scripts die deze hook gebruiken dienen te worden geplaatst in `hooks/uninstall.fish`.
 
 Binnen deze hook heeft u toegang tot twee gerelateerde variabelen:
 
@@ -127,4 +127,4 @@ Het officiële register met openbare pakketten wordt beheerd in de [oh-my-fish/p
 
 
 [fish-bind]: http://fishshell.com/docs/current/commands.html#bind
-[omf-pulls-link]: https://github.com/oh-my-fish/oh-my-fish/pulls
+[mar-pulls-link]: https://github.com/oh-my-fish/oh-my-fish/pulls

@@ -3,7 +3,7 @@
 
 # FAQ
 
-> La documentación de Oh My Fish&nbsp;&bull;&nbsp;También disponible en
+> La documentación de Marina&nbsp;&bull;&nbsp;También disponible en
 > <a href="../en-US/FAQ.md">🇺🇸</a>
 > <a href="../nl-NL/FAQ.md">🇳🇱</a>
 > <a href="../pt-BR/FAQ.md">🇧🇷</a>
@@ -17,23 +17,23 @@ Gracias por dedicar tiempo para leer este apartado de preguntas frecuentes (FAQ)
 en este documento.
 
 
-## ¿Qué es Oh My Fish y por qué lo quiero?
+## ¿Qué es Marina y por qué lo quiero?
 
-Oh My Fish es un _framework_ para [Fishshell](http://fishshell.com/). Le ayudará a gestionar su configuración, los temas y paquetes.
-
-
-## ¿Qué necesito conocer para utilizar Oh My Fish?
-
-_Nada_. Puede instalar Oh My Fish y seguir utilizando Fish de manera normal. Cuando este listo para aprender más simplemente escriba en la línea de comandos `omf help`.
+Marina es un _framework_ para [Fishshell](http://fishshell.com/). Le ayudará a gestionar su configuración, los temas y paquetes.
 
 
-## ¿Qué son los paquetes Oh My Fish?
+## ¿Qué necesito conocer para utilizar Marina?
 
-Los paquetes Oh My Fish son temas o complementos escritos en fish que expanden las funcionalidades principales de la _shell_, ejecutan código durante la
+_Nada_. Puede instalar Marina y seguir utilizando Fish de manera normal. Cuando este listo para aprender más simplemente escriba en la línea de comandos `mar help`.
+
+
+## ¿Qué son los paquetes Marina?
+
+Los paquetes Marina son temas o complementos escritos en fish que expanden las funcionalidades principales de la _shell_, ejecutan código durante la
 inicialización, añaden auto completado para las utilidades más conocidas, etc.
 
 
-## ¿Qué tipos de paquetes Oh My Fish existen?
+## ¿Qué tipos de paquetes Marina existen?
 
 Existen aproximadamente 3 tipos de paquetes:
 
@@ -46,20 +46,20 @@ Existen aproximadamente 3 tipos de paquetes:
 sistemas Linux and OSX.
 
 
-## ¿Qué hace Oh My Fish exactamente?
+## ¿Qué hace Marina exactamente?
 
-+ Ejecuta `$OMF_CONFIG/before.init.fish` si está disponible.
++ Ejecuta `$MAR_CONFIG/before.init.fish` si está disponible.
 
-+ Carga de manera automática los paquetes y temas instalados en la ruta `$OMF_PATH/`.
++ Carga de manera automática los paquetes y temas instalados en la ruta `$MAR_PATH/`.
 
-+ Carga de manera automática su ruta de configuración. `~/.config/omf` de manera predeterminada, pero configurable mediante `$OMF_CONFIG`.
++ Carga de manera automática su ruta de configuración. `~/.config/mar` de manera predeterminada, pero configurable mediante `$MAR_CONFIG`.
 
-+ Carga de manera automática cualquier directorio `functions` de las rutas `$OMF_PATH` y `$OMF_CONFIG`
++ Carga de manera automática cualquier directorio `functions` de las rutas `$MAR_PATH` y `$MAR_CONFIG`
 
-+ Ejecuta `$OMF_CONFIG/init.fish` si está disponible.
++ Ejecuta `$MAR_CONFIG/init.fish` si está disponible.
 
 
-## ¿Cómo puedo actualizar una instalación de Oh My Fish ya existente?
+## ¿Cómo puedo actualizar una instalación de Marina ya existente?
 
 > :warning: Recuerde realizar primero una copia de seguridad de sus archivos de configuración (o _dotfiles_) y otros datos importantes.
 

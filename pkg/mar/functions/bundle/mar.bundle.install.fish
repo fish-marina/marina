@@ -1,0 +1,38 @@
+function mar.bundle.install
+  test -n "$argv";
+    and set bundle $argv
+    or set bundle $MAR_CONFIG/bundle
+
+  if test -f $bundle
+    set packages (mar.packages.list)
+    set bundle_contents (cat $bundle | sort -u)
+
+    for record in $bundle_contents
+      test -n "$record"; or continue
+
+      set type (echo $record | cut -s -d' ' -f1 | sed 's/ //g')
+      contains $type theme package; or continue
+
+      set name_or_url (echo $record | cut -s -d' ' -f2- | sed 's/ //g')
+      test -n "$name_or_url"; or continue
+
+      set name (mar.packages.name $name_or_url)
+      if not contains $name $packages
+        mar.packages.install $name_or_url;
+          and begin
+            test $type = package
+              and begin
+                require $name
+                  or echo "Failed to require package: $name"
+              end
+              or true
+          end
+          or set error
+      end
+    end
+
+    sort -u $bundle -o $bundle
+  end
+
+  not set -q error
+end

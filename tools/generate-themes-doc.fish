@@ -4,7 +4,7 @@
 #
 # ./tools/generate-themes-doc.fish > docs/NewThemes.md
 #
-# Prior to running it, check out packages-main repository alongside oh-my-fish.
+# Prior to running it, check out packages-main repository alongside marina.
 # If it's checked out at another location, you can specify it with the only
 # optional argument
 #

@@ -3,7 +3,7 @@
 
 # Pacotes
 
-> Documentação do Oh My Fish &nbsp;&bull;&nbsp;Also in
+> Documentação do Marina &nbsp;&bull;&nbsp;Also in
 > <a href="../en-US/Packages.md">🇺🇸</a>
 > <a href="../es-ES/Packages.md">🇪🇸</a>
 > <a href="../nl-NL/Packages.md">🇳🇱</a>
@@ -17,13 +17,13 @@
 
 Para aprender a criação de pacotes vamos criar um novo pacote que irá fornecer um comando `hello_world` para o seu shell. Os nomes de pacotes só podem conter letras minúsculas e hifens para separar palavras.
 
-Oh My Fish pode criar uma estrutura padrão de um pacote para você. Use o comando `omf new`:
+Marina pode criar uma estrutura padrão de um pacote para você. Use o comando `mar new`:
 
 ```fish
-$ omf new pkg hello_world
+$ mar new pkg hello_world
 ```
 
-> Use `omf new theme my_theme_name` para temas.
+> Use `mar new theme my_theme_name` para temas.
 
 O utilitário altera o diretório atual para o pacote recém-criado:
 ```
@@ -54,11 +54,11 @@ Tenha em mente que o fish não tem um escopo privado, portanto, se você precisa
 
 # Hooks
 
-Oh My Fish fornece um sistema de "hooks" que permite que você escreva scripts para seu pacote que são executados quando ocorrem outros eventos interessantes. Os pacotes podem usar esses ganchos para fornecer instalação avançada, gerenciamento de recursos personalizados, etc. Os ganchos são scripts fish comuns, nomeados de acordo com o nome do evento pelo qual são acionados. A maioria dos hooks residem em um diretório `hooks` dentro do diretório do projeto de um pacote.
+Marina fornece um sistema de "hooks" que permite que você escreva scripts para seu pacote que são executados quando ocorrem outros eventos interessantes. Os pacotes podem usar esses ganchos para fornecer instalação avançada, gerenciamento de recursos personalizados, etc. Os ganchos são scripts fish comuns, nomeados de acordo com o nome do evento pelo qual são acionados. A maioria dos hooks residem em um diretório `hooks` dentro do diretório do projeto de um pacote.
 
 >Os Hooks que são chamados no momento da inicialização (`init.fish` e` key_bindings.fish`) podem desacelerar a inicialização do shell. Certifique-se de evitar o código lento no momento da inicialização! Além disso, se seu pacote não precisa de um arquivo de Hook, certifique-se de removê-lo.
 
-O diretório de trabalho dentro de um Hook é sempre definido para o diretório raiz do pacote. Os Hooks Oh My Fish atualmente suportados estão listados abaixo:
+O diretório de trabalho dentro de um Hook é sempre definido para o diretório raiz do pacote. Os Hooks Marina atualmente suportados estão listados abaixo:
 
 ## `init`
 
@@ -84,7 +84,7 @@ Use esse Hook para modificar o ambiente, carregar recursos, funções de carrega
 
 Se o seu pacote ou tema precisar usar teclas de atalho, certifique-se de configurá-los no gancho `key_bindings`. Os scripts de teclas de atalho devem estar localizados em `key_bindings.fish` no diretório raiz do pacote. Neste gancho, você pode usar livremente o comando [`bind`][fish-bind] para definir ligações de teclas personalizadas.
 
->Os temas também podem definir teclas de atalho! O Oh My Fish irá recarregar as teclas de atalho quando mudar de tema.
+>Os temas também podem definir teclas de atalho! O Marina irá recarregar as teclas de atalho quando mudar de tema.
 
 ## `install`
 
@@ -111,7 +111,7 @@ Este hook é útil para atualizar submódulos Git ou verificar novas versões de
 
 ## `uninstall`
 
-O hook `uninstall` será acionado antes que um pacote seja removido via `omf remove <pkg>`. Os scripts para este hook devem estar localizados em `hooks/uninstall.fish`.
+O hook `uninstall` será acionado antes que um pacote seja removido via `mar remove <pkg>`. Os scripts para este hook devem estar localizados em `hooks/uninstall.fish`.
 
 Dentro desse gancho, você pode acessar duas variáveis relacionadas ao pacote:
 
@@ -128,4 +128,4 @@ O registro oficial de pacotes públicos é gerenciado no repositório [oh-my-fis
 
 
 [fish-bind]: http://fishshell.com/docs/current/commands.html#bind
-[omf-pulls-link]: https://github.com/oh-my-fish/oh-my-fish/pulls
+[mar-pulls-link]: https://github.com/oh-my-fish/oh-my-fish/pulls

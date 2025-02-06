@@ -1,7 +1,7 @@
 Show information about a package.
 
 == USAGE
-  omf describe <name>
+  mar describe <name>
 
 == DESCRIPTION
 Looks up a package whose name matches <name>.
@@ -9,14 +9,14 @@ Looks up a package whose name matches <name>.
 == EXAMPLES
 Show information about the *brew* package:
 
-  omf describe brew
+  mar describe brew
 
 We get the following output:
 
   Package: brew
-  Description: Oh My Fish plugin to integrate Homebrew paths into shell.
+  Description: Marina plugin to integrate Homebrew paths into shell.
   Repository: https://github.com/oh-my-fish/plugin-brew
   Maintainer:
 
 == ALIASES
-*omf d*
+*mar d*

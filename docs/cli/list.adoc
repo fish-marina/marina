@@ -1,7 +1,7 @@
 List installed packages.
 
 == USAGE
-  omf list [options]
+  mar list [options]
 
 == OPTIONS
 -p, --plugin::
@@ -11,4 +11,4 @@ List installed packages.
   Only list themes.
 
 == ALIASES
-*omf l*, *omf ls*
+*mar l*, *mar ls*

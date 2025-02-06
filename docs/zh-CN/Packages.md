@@ -3,7 +3,7 @@
 
 # Packages
 
-> Oh My Fish Documentation&nbsp;&bull;&nbsp;Also in
+> Marina Documentation&nbsp;&bull;&nbsp;Also in
 > <a href="../en-US/Packages.md">🇺🇸</a>
 > <a href="../es-ES/Packages.md">🇪🇸</a>
 > <a href="../nl-NL/Packages.md">🇳🇱</a>
@@ -17,13 +17,13 @@
 
 本教程通过创建一个简单的 `hello_world` 让我们一起来学习，插件名通常仅接受小写英文字母和连字符分割每个单词。
 
-Oh My Fish 提供一个脚手架工具帮助生成插件或主题的模板结构。通过执行命令 `omf new` 生成：
+Marina 提供一个脚手架工具帮助生成插件或主题的模板结构。通过执行命令 `mar new` 生成：
 
 ```fish
-$ omf new pkg hello_world
+$ mar new pkg hello_world
 ```
 
-> 使用 `omf new theme my_theme_name` 创建主题模板。
+> 使用 `mar new theme my_theme_name` 创建主题模板。
 
 该操作会创建插件的目录并切换到该路径下面：
 
@@ -51,7 +51,7 @@ end
 
 # 事件
 
-利用 fish 事件的优势，目前 Oh My Fish 定义了两个事件提供给开发者使用：
+利用 fish 事件的优势，目前 Marina 定义了两个事件提供给开发者使用：
 
 ## 初始化
 
@@ -71,7 +71,7 @@ echo "hello_world initialized"
 
 ## 卸载
 
-哦，我的鱼还设有`uninstall.fish`挂钩，通过 `omf remove <pkg>`被删除软件包之前被调用。包可以使用这个钩子清理自定义的资源，等等。
+哦，我的鱼还设有`uninstall.fish`挂钩，通过 `mar remove <pkg>`被删除软件包之前被调用。包可以使用这个钩子清理自定义的资源，等等。
 
 本书中，你可以访问一个包相关的变量：
 * `$path`：软件包的安装路径
@@ -79,19 +79,19 @@ echo "hello_world initialized"
 
 # 发布插件
 
-Oh My Fish 在 `$OMF_PATH/db/` 目录注册已发布的插件或主题。
+Marina 在 `$MAR_PATH/db/` 目录注册已发布的插件或主题。
 
 添加你的插件或主题到注册目录需要执行:
 
 ```fish
 # 插件：
-omf submit pkg/hello_world .../hello_world.git
+mar submit pkg/hello_world .../hello_world.git
 
 # 主题：
-omf submit theme/my_theme .../my_theme_name.git
+mar submit theme/my_theme .../my_theme_name.git
 ```
 
-此操作仅在本地会添加一个新的注册索引，最后你还需要[提交 PR][omf-pulls-link]并入官方的注册索引。
+此操作仅在本地会添加一个新的注册索引，最后你还需要[提交 PR][mar-pulls-link]并入官方的注册索引。
 
 
-[omf-pulls-link]: https://github.com/oh-my-fish/oh-my-fish/pulls
+[mar-pulls-link]: https://github.com/oh-my-fish/oh-my-fish/pulls

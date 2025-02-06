@@ -2,14 +2,14 @@
 
 # Core Library
 
-> Oh My Fish Documentation
+> Marina Documentation
 
 <br>
 
 #### `require` _`[--no-bundle] <name>...`_
 #### `require` _`[--no-bundle] --path <path>...`_
 
-Does initialization of Oh My Fish compatible packages:
+Does initialization of Marina compatible packages:
 
 * Autoload function and completion paths
 * Source key bindings
@@ -27,11 +27,11 @@ key_bindings.fish
 ```
 
 When using the form `require <name>...`, the search path for packages is
-`$OMF_CONFIG` and `$OMF_PATH`. It's also possible to require directories
+`$MAR_CONFIG` and `$MAR_PATH`. It's also possible to require directories
 using `--path` switch. To ignore dependency loading you can also use
 `--no-bundle` switch
 
-This function is the base of Oh My Fish framework, being responsible for
+This function is the base of Marina framework, being responsible for
 the major part of framework's own startup code.
 
 #### `autoload` _`[-e] <path>...`_

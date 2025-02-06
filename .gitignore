@@ -1,6 +1,6 @@
 pkg/**
-!pkg/omf
-!pkg/omf/**
+!pkg/mar
+!pkg/mar/**
 !pkg/fish-spec
 !pkg/fish-spec/**
 

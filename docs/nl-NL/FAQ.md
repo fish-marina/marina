@@ -3,7 +3,7 @@
 
 # Veelgestelde vragen
 
-> Oh My Fish-documentatie&nbsp;&bull;&nbsp;Ook beschikbaar in het
+> Marina-documentatie&nbsp;&bull;&nbsp;Ook beschikbaar in het
 > <a href="../en-US/FAQ.md">🇺🇸</a>
 > <a href="../es-ES/FAQ.md">🇪🇸</a>
 > <a href="../pt-BR/FAQ.md">🇧🇷</a>
@@ -16,22 +16,22 @@
 Fijn dat u even de tijd neemt om de veelgestelde vragen door te nemen. Als uw vraag hierna nog niet beantwoord is, open dan een 'issue'.
 
 
-## Wat is Oh My Fish en waarom zou ik het willen gebruiken?
+## Wat is Marina en waarom zou ik het willen gebruiken?
 
-Oh My Fish (OMF) is een _framework_ voor de [Fish-shell](http://fishshell.com/). OMF helpt u de configuratie te beheren en thema's en pakketten te installeren.
-
-
-## Wat moet ik kennen om Oh My Fish te kunnen gebruiken?
-
-_Niks_. Installeer Oh My Fish en gebruik Fish zoals gebruikelijk. Typ `omf help` als u iets nieuws wilt leren.
+Marina (MAR) is een _framework_ voor de [Fish-shell](http://fishshell.com/). MAR helpt u de configuratie te beheren en thema's en pakketten te installeren.
 
 
-## Wat zijn Oh My Fish-pakketten?
+## Wat moet ik kennen om Marina te kunnen gebruiken?
 
-Oh My Fish-pakketten zijn thema's of plug-ins, geschreven in fish, die de kernfunctionaliteit uitbreiden, code uitvoeren tijdens het opstarten, automatische aanvullingen van veelgebruikte programma's toevoegen, etc.
+_Niks_. Installeer Marina en gebruik Fish zoals gebruikelijk. Typ `mar help` als u iets nieuws wilt leren.
 
 
-## Wat voor Oh My Fish-pakketten zijn er zoal beschikbaar?
+## Wat zijn Marina-pakketten?
+
+Marina-pakketten zijn thema's of plug-ins, geschreven in fish, die de kernfunctionaliteit uitbreiden, code uitvoeren tijdens het opstarten, automatische aanvullingen van veelgebruikte programma's toevoegen, etc.
+
+
+## Wat voor Marina-pakketten zijn er zoal beschikbaar?
 
 Er zijn 3 soorten pakketgroepen:
 
@@ -42,20 +42,20 @@ Er zijn 3 soorten pakketgroepen:
 3. Traditionele shell-hulpmiddelen. Een voorbeeld hiervan is [`pkg-copy`](https://github.com/oh-my-fish/pkg-copy), een klembordbeheerder die op zowel Linux als macOS werkt.
 
 
-## Wat doet Oh My Fish precies?
+## Wat doet Marina precies?
 
-+ Voert `$OMF_CONFIG/before.init.fish` uit (indien beschikbaar).
++ Voert `$MAR_CONFIG/before.init.fish` uit (indien beschikbaar).
 
-+ Laadt automatisch pakketten en thema's uit `$OMF_PATH/`.
++ Laadt automatisch pakketten en thema's uit `$MAR_PATH/`.
 
-+ Laadt automatisch uw configuratiepad. Standaard is dit `~/.config/omf`, maar dit is instelbaar middels `$OMF_CONFIG`.
++ Laadt automatisch uw configuratiepad. Standaard is dit `~/.config/mar`, maar dit is instelbaar middels `$MAR_CONFIG`.
 
-+ Laadt automatisch de `functions`-map uit `$OMF_PATH` en `$OMF_CONFIG`
++ Laadt automatisch de `functions`-map uit `$MAR_PATH` en `$MAR_CONFIG`
 
-+ Voert `$OMF_CONFIG/init.fish` uit (indien beschikbaar).
++ Voert `$MAR_CONFIG/init.fish` uit (indien beschikbaar).
 
 
-## Hoe kan ik een reeds aanwezige Oh My Fish-installatie bijwerken?
+## Hoe kan ik een reeds aanwezige Marina-installatie bijwerken?
 
 > :warning: Maak een back-up van uw verborgen bestanden en andere belangrijke gegevens.
 

@@ -3,7 +3,7 @@
 
 # FAQ
 
-> Documentação do Oh My Fish &nbsp;&bull;&nbsp;Also in
+> Documentação do Marina &nbsp;&bull;&nbsp;Also in
 > <a href="../en-US/FAQ.md">🇺🇸</a>
 > <a href="../es-ES/FAQ.md">🇪🇸</a>
 > <a href="../nl-NL/FAQ.md">🇳🇱</a>
@@ -16,22 +16,22 @@
 Obrigado por dedicar algum tempo para ler este FAQ. Sinta-se livre para criar um nova issue se sua pergunta não for respondida aqui.
 
 
-## O que é Oh My Fish e por que eu quero isso?
+## O que é Marina e por que eu quero isso?
 
-Oh My Fish é um _framework_ para o [Fishshell](http://fishshell.com/). Ele ajuda você a gerenciar sua configuração, temas e pacotes.
-
-
-## O que eu preciso saber para usar o Oh My Fish?
-
-_Nada_. Você pode instalar o Oh My Fish e manter usando o Fish normalmente. Quando estiver pronto para aprender mais apenas digite `omf help`.
+Marina é um _framework_ para o [Fishshell](http://fishshell.com/). Ele ajuda você a gerenciar sua configuração, temas e pacotes.
 
 
-## O que são os pacotes Oh My Fish?
+## O que eu preciso saber para usar o Marina?
 
-Os pacotes Oh My Fish são temas ou plugins escritos em fish que estendem as funcionalidades do shell, executando códigos durante a inicialização, adicionando auto-complete para funcionalidades conhecidas, etc.
+_Nada_. Você pode instalar o Marina e manter usando o Fish normalmente. Quando estiver pronto para aprender mais apenas digite `mar help`.
 
 
-## Quais os tipos de pacotes do Oh My Fish?
+## O que são os pacotes Marina?
+
+Os pacotes Marina são temas ou plugins escritos em fish que estendem as funcionalidades do shell, executando códigos durante a inicialização, adicionando auto-complete para funcionalidades conhecidas, etc.
+
+
+## Quais os tipos de pacotes do Marina?
 
 Há aproximadamente 3 tipos de pacotes:
 
@@ -41,20 +41,20 @@ Há aproximadamente 3 tipos de pacotes:
 
 3. Utilitários shell tradicionais. Por exemplo [`pkg-copy`](https://github.com/oh-my-fish/pkg-copy), um utilitário de área de transferência compatível entre Linux e OSX.
 
-## O que exatamente o Oh My Fish faz?
+## O que exatamente o Marina faz?
 
-+ Executa `$OMF_CONFIG/before.init.fish` se disponível.
++ Executa `$MAR_CONFIG/before.init.fish` se disponível.
 
-+ Carregamento automático de pacotes e temas instalados em `$OMF_PATH/`.
++ Carregamento automático de pacotes e temas instalados em `$MAR_PATH/`.
 
-+ Carregamento automático suas configurações. `~/.config/omf` por padrão, mas configurável via `$OMF_CONFIG`.
++ Carregamento automático suas configurações. `~/.config/mar` por padrão, mas configurável via `$MAR_CONFIG`.
 
-+ Carregamento automático de quaisquer `functions` armazenadas em `$OMF_PATH` e `$OMF_CONFIG`
++ Carregamento automático de quaisquer `functions` armazenadas em `$MAR_PATH` e `$MAR_CONFIG`
 
-+ Executa `$OMF_CONFIG/init.fish` se disponível.
++ Executa `$MAR_CONFIG/init.fish` se disponível.
 
 
-## Como eu posso atualizar uma instalação existente do Oh My Fish?
+## Como eu posso atualizar uma instalação existente do Marina?
 
 > :warning: Lembre de fazer um backup de seus dotfiles e de outros dados importantes.
 

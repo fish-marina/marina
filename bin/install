@@ -1,46 +1,46 @@
 #!/usr/bin/env fish
-# Oh My Fish installer. See `install --help` for usage.
+# Marina installer. See `install --help` for usage.
 
 # Set environment options.
-set -q OMF_REPO_URI;    or set OMF_REPO_URI "https://github.com/oh-my-fish/oh-my-fish"
-set -q OMF_REPO_BRANCH; or set OMF_REPO_BRANCH "master"
+set -q MAR_REPO_URI;    or set MAR_REPO_URI "https://github.com/oh-my-fish/oh-my-fish"
+set -q MAR_REPO_BRANCH; or set MAR_REPO_BRANCH "master"
 
 
 function main
   # Set default settings
   set -q XDG_DATA_HOME
-    and set -g OMF_PATH_DEFAULT "$XDG_DATA_HOME/omf"
-    or set -g OMF_PATH_DEFAULT "$HOME/.local/share/omf"
+    and set -g MAR_PATH_DEFAULT "$XDG_DATA_HOME/mar"
+    or set -g MAR_PATH_DEFAULT "$HOME/.local/share/mar"
 
   set -q XDG_CONFIG_HOME
     and set -g CONFIG_PATH "$XDG_CONFIG_HOME"
     or set -g CONFIG_PATH "$HOME/.config"
 
-  set -g OMF_CONFIG_DEFAULT "$CONFIG_PATH/omf"
+  set -g MAR_CONFIG_DEFAULT "$CONFIG_PATH/mar"
   set -g FISH_CONFIG "$CONFIG_PATH/fish"
 
-  set -g OMF_PATH "$OMF_PATH_DEFAULT"
-  set -g OMF_CONFIG "$OMF_CONFIG_DEFAULT"
-  set -g OMF_CHANNEL stable
+  set -g MAR_PATH "$MAR_PATH_DEFAULT"
+  set -g MAR_CONFIG "$MAR_CONFIG_DEFAULT"
+  set -g MAR_CHANNEL stable
 
   # Ensure repository URL ends with .git
-  set OMF_REPO_URI (echo $OMF_REPO_URI | command sed 's/\.git//').git
+  set MAR_REPO_URI (echo $MAR_REPO_URI | command sed 's/\.git//').git
 
   # Parse command args
   while set -q argv[1]
     switch "$argv[1]"
       case --help -h
         echo "Usage: install [options]
-  Install Oh My Fish
+  Install Marina
 
 Options:
-  --channel=<channel>     Download a specific release channel, either \"stable\" or \"dev\" (default is \"$OMF_CHANNEL\").
+  --channel=<channel>     Download a specific release channel, either \"stable\" or \"dev\" (default is \"$MAR_CHANNEL\").
   --check                 Do a system readiness check without installing.
-  --config=<path>         Put config in a specific path (default is $OMF_CONFIG_DEFAULT).
+  --config=<path>         Put config in a specific path (default is $MAR_CONFIG_DEFAULT).
   --help, -h              Show this help message.
   --noninteractive        Disable interactive questions (assume no, use with --yes to assume yes).
   --offline[=<path>]      Offline install, optionally specifying a tar or directory to use.
-  --path=<path>           Use a specific install path (default is $OMF_PATH_DEFAULT).
+  --path=<path>           Use a specific install path (default is $MAR_PATH_DEFAULT).
   --uninstall             Uninstall existing installation instead of installing.
   --verbose               Enable verbose debugging statements for the installer.
   --yes, -y               Assume yes for interactive questions.
@@ -48,10 +48,10 @@ Options:
         return 0
 
       case '--channel=stable'
-        set -g OMF_CHANNEL stable
+        set -g MAR_CHANNEL stable
 
       case '--channel=dev'
-        set -g OMF_CHANNEL dev
+        set -g MAR_CHANNEL dev
 
       case '--channel=*'
         abort "Unknown release channel \""(echo "$argv[1]" | command cut -d= -f2-)"\"."
@@ -60,7 +60,7 @@ Options:
         set -g CHECK_ONLY
 
       case '--config=*'
-        echo "$argv[1]" | command cut -d= -f2- | command sed -e "s#~#$HOME#" | read -g OMF_CONFIG
+        echo "$argv[1]" | command cut -d= -f2- | command sed -e "s#~#$HOME#" | read -g MAR_CONFIG
 
       case --noninteractive
         set -g NONINTERACTIVE
@@ -73,7 +73,7 @@ Options:
         echo "$argv[1]" | command cut -d= -f2- | command sed -e "s#~#$HOME#" | read -g OFFLINE_PATH
 
       case '--path=*'
-        echo "$argv[1]" | command cut -d= -f2- | command sed -e "s#~#$HOME#" | read -g OMF_PATH
+        echo "$argv[1]" | command cut -d= -f2- | command sed -e "s#~#$HOME#" | read -g MAR_PATH
 
       case --uninstall
         set -g UNINSTALL
@@ -106,24 +106,24 @@ Options:
 
   # If the user wants to uninstall, jump to uninstallation and exit.
   if set -q UNINSTALL
-    uninstall_omf
+    uninstall_mar
     return
   end
 
-  # Check if OMF is already installed.
-  if test -d "$OMF_PATH"
-    if is_install_dir "$OMF_PATH"
-      say "Existing installation detected at $OMF_PATH"
+  # Check if MAR is already installed.
+  if test -d "$MAR_PATH"
+    if is_install_dir "$MAR_PATH"
+      say "Existing installation detected at $MAR_PATH"
 
       confirm_yes "Would you like to remove the existing installation?"
-      uninstall_omf
+      uninstall_mar
     else
-      abort "Target directory $OMF_PATH already exists"
+      abort "Target directory $MAR_PATH already exists"
     end
   end
 
   # Begin the install process.
-  install_omf
+  install_mar
 
   # We made it!
   say "Installation successful!"
@@ -140,7 +140,7 @@ end
 function on_exit -p %self
   if not contains $argv[3] 0 2
     echo "
-Oh My Fish installation failed.
+Marina installation failed.
 
 If you think that it's a bug, please open an
 issue with the complete installation log here:
@@ -155,12 +155,12 @@ http://github.com/oh-my-fish/oh-my-fish/issues"
 end
 
 
-# Installs Oh My Fish.
-function install_omf
-  say "Installing Oh My Fish to $OMF_PATH..."
+# Installs Marina.
+function install_mar
+  say "Installing Marina to $MAR_PATH..."
 
   # Prepare paths
-  command mkdir -p (dirname "$OMF_PATH")
+  command mkdir -p (dirname "$MAR_PATH")
 
   # Install step
   if set -q OFFLINE
@@ -177,20 +177,20 @@ end
 
 # Downloads and installs the framework from GitHub.
 function install_from_github
-  say "Using release channel \"$OMF_CHANNEL\"."
-  say "Cloning $OMF_REPO_BRANCH from $OMF_REPO_URI..."
+  say "Using release channel \"$MAR_CHANNEL\"."
+  say "Cloning $MAR_REPO_BRANCH from $MAR_REPO_URI..."
 
-  if not command git clone -q -b "$OMF_REPO_BRANCH" "$OMF_REPO_URI" "$OMF_PATH"
+  if not command git clone -q -b "$MAR_REPO_BRANCH" "$MAR_REPO_URI" "$MAR_PATH"
     abort "Error cloning repository!"
   end
 
-  if test $OMF_CHANNEL = stable
+  if test $MAR_CHANNEL = stable
     # Get the commit for the latest release.
-    set -l hash (command git --git-dir "$OMF_PATH/.git" --work-tree "$OMF_PATH" rev-list --tags='v*' --max-count=1 2> /dev/null)
+    set -l hash (command git --git-dir "$MAR_PATH/.git" --work-tree "$MAR_PATH" rev-list --tags='v*' --max-count=1 2> /dev/null)
       # Get the release tag.
-      and set -l tag (command git --git-dir "$OMF_PATH/.git" --work-tree "$OMF_PATH" describe --tags $hash)
+      and set -l tag (command git --git-dir "$MAR_PATH/.git" --work-tree "$MAR_PATH" describe --tags $hash)
       # Checkout the release.
-      and command git --git-dir "$OMF_PATH/.git" --work-tree "$OMF_PATH" checkout --quiet tags/$tag
+      and command git --git-dir "$MAR_PATH/.git" --work-tree "$MAR_PATH" checkout --quiet tags/$tag
       or report error "Error getting latest version!"
   end
 
@@ -225,9 +225,9 @@ function install_offline
   if test -f "$OFFLINE_PATH"
     say "Offline path is a file, assuming tar archive..."
 
-    mkdir -p "$OMF_PATH"
+    mkdir -p "$MAR_PATH"
 
-    command tar -xf "$OFFLINE_PATH" -C "$OMF_PATH" --strip-components=1
+    command tar -xf "$OFFLINE_PATH" -C "$MAR_PATH" --strip-components=1
       or abort "Could not extract tar file $OFFLINE_PATH"
 
     return
@@ -238,17 +238,17 @@ function install_offline
     abort "$OFFLINE_PATH is not a directory"
   end
 
-  # Make sure the given path is actually the OMF source.
+  # Make sure the given path is actually the MAR source.
   if not is_install_dir "$OFFLINE_PATH"
     abort "$OFFLINE_PATH is not a valid local installation source"
   end
 
   # Copy the source into the install location.
-  command cp -r "$OFFLINE_PATH" "$OMF_PATH"
+  command cp -r "$OFFLINE_PATH" "$MAR_PATH"
     or abort "Failed to copy source!"
 
   # Set up Git remotes only if the offline install is a Git repository.
-  test -d "$OMF_PATH/.git"
+  test -d "$MAR_PATH/.git"
     and set_git_remotes
 
   return 0
@@ -257,27 +257,27 @@ end
 
 # Set upstream remotes on the framework Git repository.
 function set_git_remotes
-  set git_upstream (command git --git-dir "$OMF_PATH/.git" --work-tree "$OMF_PATH" config remote.upstream.url)
+  set git_upstream (command git --git-dir "$MAR_PATH/.git" --work-tree "$MAR_PATH" config remote.upstream.url)
 
   if test -z "$git_upstream"
-    command git --git-dir "$OMF_PATH/.git" --work-tree "$OMF_PATH" remote add upstream $OMF_REPO_URI
+    command git --git-dir "$MAR_PATH/.git" --work-tree "$MAR_PATH" remote add upstream $MAR_REPO_URI
   else
-    command git --git-dir "$OMF_PATH/.git" --work-tree "$OMF_PATH" remote set-url upstream $OMF_REPO_URI
+    command git --git-dir "$MAR_PATH/.git" --work-tree "$MAR_PATH" remote set-url upstream $MAR_REPO_URI
   end
 end
 
 
-# Sets up the necessary bootstrap code for Fish to load OMF.
+# Sets up the necessary bootstrap code for Fish to load MAR.
 function install_bootstrap
   set -l fish_config_file "$FISH_CONFIG/config.fish"
-  set -l vendor_config_file "$FISH_CONFIG/conf.d/omf.fish"
+  set -l vendor_config_file "$FISH_CONFIG/conf.d/mar.fish"
 
   # Create the Fish config directory if it doesn't exist yet (if the first thing the user runs with Fish is this
   # installer, for example).
   command mkdir -p "$FISH_CONFIG"
 
-  # If Oh My Fish is already configured and ready to go, there's nothing else we need to do here.
-  if is_omf_loaded
+  # If Marina is already configured and ready to go, there's nothing else we need to do here.
+  if is_mar_loaded
     return 0
 
   # Fish 2.3.0+ supports conf.d which is for vendors to manage, so we can just plop an init file under our control.
@@ -292,7 +292,7 @@ function install_bootstrap
     generate_bootstrap > "$fish_config_file"
 
   # Even though config.fish already exists, we can prepend to it if the user is OK with it.
-  else if confirm "Would you like Oh My Fish to be added to your configuration automatically?"
+  else if confirm "Would you like Marina to be added to your configuration automatically?"
     say "Prepending bootstrap to $fish_config_file..."
 
     # Create a temporary file to store the combined config so that we can write atomically.
@@ -305,80 +305,80 @@ function install_bootstrap
 
   # We don't have any options left, so let the user set up the bootstrap manually.
   else
-    say "For Oh My Fish to work properly, please paste the code below into a file that Fish can run at startup:"
+    say "For Marina to work properly, please paste the code below into a file that Fish can run at startup:"
     echo
     generate_bootstrap
   end
 
-  # Backup the user's theme settings. This can be removed when OMF no longer touches this file to switch themes.
+  # Backup the user's theme settings. This can be removed when MAR no longer touches this file to switch themes.
   backup_file "$FISH_CONFIG/functions/fish_prompt.fish"
 end
 
 
 # Sets up the configuration directory.
 function install_config
-  say "Setting up Oh My Fish configuration..."
+  say "Setting up Marina configuration..."
 
-  # Set up the Oh My Fish configuration directory.
-  if not test -d "$OMF_CONFIG"
-    command mkdir -p "$OMF_CONFIG"
+  # Set up the Marina configuration directory.
+  if not test -d "$MAR_CONFIG"
+    command mkdir -p "$MAR_CONFIG"
   end
 
-  test -f "$OMF_CONFIG/bundle";
-    or echo "theme default" > "$OMF_CONFIG/bundle"
-  test -f "$OMF_CONFIG/channel";
-    or echo $OMF_CHANNEL > "$OMF_CONFIG/channel"
-  test -f "$OMF_CONFIG/theme"
-    or echo "default" > "$OMF_CONFIG/theme"
+  test -f "$MAR_CONFIG/bundle";
+    or echo "theme default" > "$MAR_CONFIG/bundle"
+  test -f "$MAR_CONFIG/channel";
+    or echo $MAR_CHANNEL > "$MAR_CONFIG/channel"
+  test -f "$MAR_CONFIG/theme"
+    or echo "default" > "$MAR_CONFIG/theme"
 
   # Install plugins
-  fish -c "omf install"
+  fish -c "mar install"
     or abort "Error installing plugins"
 end
 
 
-# Generates the bootstrap code used to initialize Oh My Fish on shell startup.
+# Generates the bootstrap code used to initialize Marina on shell startup.
 function generate_bootstrap
-  echo "# Path to Oh My Fish install."
+  echo "# Path to Marina install."
 
-  if test "$OMF_PATH" = "$OMF_PATH_DEFAULT"
+  if test "$MAR_PATH" = "$MAR_PATH_DEFAULT"
     echo "\
 set -q XDG_DATA_HOME
-  and set -gx OMF_PATH \"\$XDG_DATA_HOME/omf\"
-  or set -gx OMF_PATH \"\$HOME/.local/share/omf\""
+  and set -gx MAR_PATH \"\$XDG_DATA_HOME/mar\"
+  or set -gx MAR_PATH \"\$HOME/.local/share/mar\""
   else
-    echo "set -gx OMF_PATH '$OMF_PATH'"
+    echo "set -gx MAR_PATH '$MAR_PATH'"
   end
 
-  if test "$OMF_CONFIG" != "$OMF_CONFIG_DEFAULT"
+  if test "$MAR_CONFIG" != "$MAR_CONFIG_DEFAULT"
     echo "
-# Customize Oh My Fish configuration path.
-set -gx OMF_CONFIG '$OMF_CONFIG'"
+# Customize Marina configuration path.
+set -gx MAR_CONFIG '$MAR_CONFIG'"
   end
 
   echo "
-# Load Oh My Fish configuration.
-source \$OMF_PATH/init.fish"
+# Load Marina configuration.
+source \$MAR_PATH/init.fish"
 end
 
 
-# Uninstalls an existing OMF installation.
-function uninstall_omf
-  is_install_dir "$OMF_PATH"
-    or abort "No installation detected at $OMF_PATH"
+# Uninstalls an existing MAR installation.
+function uninstall_mar
+  is_install_dir "$MAR_PATH"
+    or abort "No installation detected at $MAR_PATH"
 
-  say (set_color -o red 2> /dev/null)"This will uninstall Oh My Fish and all plugins and themes from $OMF_PATH."(set_color normal 2> /dev/null)
+  say (set_color -o red 2> /dev/null)"This will uninstall Marina and all plugins and themes from $MAR_PATH."(set_color normal 2> /dev/null)
 
   # If we installed the bootstrap to the user's config, let them know they need to remove it themselves.
-  if begin; test -f "$FISH_CONFIG/config.fish"; and grep -q OMF_PATH "$FISH_CONFIG/config.fish"; end
-    say (set_color -o 2> /dev/null)"Your configuration will not be modified. You may need to remove Oh My Fish startup code from $FISH_CONFIG/config.fish."(set_color normal 2> /dev/null)
+  if begin; test -f "$FISH_CONFIG/config.fish"; and grep -q MAR_PATH "$FISH_CONFIG/config.fish"; end
+    say (set_color -o 2> /dev/null)"Your configuration will not be modified. You may need to remove Marina startup code from $FISH_CONFIG/config.fish."(set_color normal 2> /dev/null)
   end
 
   confirm_yes "Are you sure you want to continue?"
-  say "Uninstalling from $OMF_PATH..."
+  say "Uninstalling from $MAR_PATH..."
 
   # Trigger package uninstall events
-  for path in $OMF_PATH/pkg/*
+  for path in $MAR_PATH/pkg/*
     set -l package (command basename "$path")
 
     test -f "$path/hooks/uninstall.fish"
@@ -391,11 +391,11 @@ function uninstall_omf
   end
 
   # Remove the core framework
-  command rm -rf "$OMF_PATH"
+  command rm -rf "$MAR_PATH"
     or abort "Uninstall failed"
 
   # Remove the bootstrap if it is managed by us
-  set -l vendor_config_file "$FISH_CONFIG/conf.d/omf.fish"
+  set -l vendor_config_file "$FISH_CONFIG/conf.d/mar.fish"
   if test -e "$vendor_config_file"
     command rm "$vendor_config_file"
       or abort "Failed to remove bootstrap file"
@@ -450,7 +450,7 @@ function restore_backup_file -a file_path
 end
 
 
-# Verify we have a sane environment that OMF can run in.
+# Verify we have a sane environment that MAR can run in.
 function sane_environment_check
   say "Checking for a sane environment..."
   assert_cmds
@@ -508,17 +508,17 @@ function get_git_version
 end
 
 
-# Checks if a path looks like an OMF install.
+# Checks if a path looks like an MAR install.
 function is_install_dir -a path
   test -n "$path"
     and test -d "$path"
-    and test -d "$path/pkg/omf"
+    and test -d "$path/pkg/mar"
 end
 
 
-# Checks if OMF is set up properly and working.
-function is_omf_loaded
-  command fish -c "omf --version" > /dev/null 2>&1
+# Checks if MAR is set up properly and working.
+function is_mar_loaded
+  command fish -c "mar --version" > /dev/null 2>&1
 end
 
 

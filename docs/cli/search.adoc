@@ -1,7 +1,7 @@
 Search for a plugin or theme.
 
 == USAGE
-  omf search [options] <pattern>
+  mar search [options] <pattern>
 
 == DESCRIPTION
   Search all installed package repositories for plugins and themes whose name or description matches the regular expression <pattern>. Patterns use the POSIX ERE syntax.
@@ -14,9 +14,9 @@ Search for a plugin or theme.
   Limit results to themes.
 
 == EXAMPLES
-  omf search -p nvm
-  omf search -t bobthefish
-  omf search '^gi.*$'
+  mar search -p nvm
+  mar search -t bobthefish
+  mar search '^gi.*$'
 
 == ALIASES
-*omf s*
+*mar s*

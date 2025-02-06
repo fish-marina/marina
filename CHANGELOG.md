@@ -1,5 +1,5 @@
 # Change Log
-Important changes to Oh My Fish are recorded here for each release.
+Important changes to Marina are recorded here for each release.
 
 
 ## [7] - 2020-04-11
@@ -50,7 +50,7 @@ Thanks to the people who contributed to this release.
 ## [6] - 2017-10-05
 This release took far longer than we targeted for releasing, but we finally made it! Some notable fixes and improvements in this release, with some long-standing bugs eliminated.
 
-A big shiny improvement was made to the command-line help text, with more manpage-like output and descriptions. Check out `omf help -h` to see the brand new `help` command, which now supports shortened command names too! (Try running `omf help u`.) All of the help pages are also viewable online here: https://github.com/oh-my-fish/oh-my-fish/tree/master/docs/cli
+A big shiny improvement was made to the command-line help text, with more manpage-like output and descriptions. Check out `mar help -h` to see the brand new `help` command, which now supports shortened command names too! (Try running `mar help u`.) All of the help pages are also viewable online here: https://github.com/oh-my-fish/oh-my-fish/tree/master/docs/cli
 
 ### Improvements
 - Revamp internal help text code and improve command-line help documentation. [#502]
@@ -98,7 +98,7 @@ Thanks to the people who contributed to this release.
 ### New themes
 - [gentoo](https://github.com/ribugent/theme-gentoo)
 - [emoji-powerline](https://github.com/wyqydsyq/emoji-powerline)
-- [one](https://github.com/fivepointseven/omf-theme-one)
+- [one](https://github.com/fivepointseven/mar-theme-one)
 
 ### Contributors
 Thanks to the people who contributed to this release.
@@ -115,14 +115,14 @@ Thanks to the people who contributed to this release.
 
 ## [4] - 2017-01-04
 ### Added
-- The Doctor (`omf doctor`) now prints some additional info for ease in troubleshooting common problems. [#456]
+- The Doctor (`mar doctor`) now prints some additional info for ease in troubleshooting common problems. [#456]
 - New script for generating the `AUTHORS` file automatically from Git history. [#426]
 - Translate documentation into Ukrainian. [#464]
 
 ### Bugs fixed
 - Fix common issues we've had with platform line endings and Git `autocrlf` and other line-ending settings. [#217] [#379] [#444] [#458]
 - Compatibility fixes for Fish 2.4.0. [#459]
-- If there is an existing theme set up, do not replace it when installing Oh My Fish for the first time. [#274] [#435]
+- If there is an existing theme set up, do not replace it when installing Marina for the first time. [#274] [#435]
 - Do not use Fish color variables for the default theme. This helps ensure the theme looks correct under any version of Fish. [#440] [#446]
 - Documentation fixes. [#418] [#457]
 
@@ -135,7 +135,7 @@ Thanks to the people who contributed to this release.
 
 ### New themes
 - [kawasaki](https://github.com/hastinbe/theme-kawasaki)
-- [slavic-cat](https://github.com/yangwao/omf-theme-slavic-cat)
+- [slavic-cat](https://github.com/yangwao/mar-theme-slavic-cat)
 
 ### Contributors
 Thanks to the people who contributed to this release.
@@ -156,9 +156,9 @@ Thanks to the people who contributed to this release.
 - Init process completely rewritten to improve performance and correctness. Using `on_{plugin}` events for plugin initialization is now deprecated and will eventually be removed. `init.fish` scripts will be sourced directly and are passed the variables `$path`, `$package`, and `$bundle`. [#343] [#335]
 - Revamped _hooks_ system that allows plugins to register scripts to be executed on certain events. Hooks are now located in `{plugin}/hooks` (except for `init` and `key_bindings`) and are regular Fish scripts named after the target hook event. Adds support for `install` and `update` hooks. See the [package docs](docs/en-US/Packages.md) for details. [#286]
 - Completely new interactive installer written for correctness that no longer overwrites any existing usr config files. Also supports offline installs. [#399] [#385] [#381] [#361] [#330]
-- The core framework updater now respects release versions and by default upgrades between tagged releases only. Run `omf channel dev` to receive updates from `master`. [#293]
+- The core framework updater now respects release versions and by default upgrades between tagged releases only. Run `mar channel dev` to receive updates from `master`. [#293]
 - Fixes for Fish 2.3.* compatibility. [#327] [#325]
-- `omf update` now returns the correct output and exit status. [#394] [#365]
+- `mar update` now returns the correct output and exit status. [#394] [#365]
 - Fix errors shown for the default theme when in a Git detached head. [#366]
 - Update templates for new plugins. [#403] [#333]
 - Documentation fixes and improvements. [#380] [#378] [#373] [#371] [#370] [#369] [#354] [#345]
@@ -208,10 +208,10 @@ Thanks to the people who contributed to this release.
 
 
 ## [2] - 2016-05-11
-- A new package searching command was added for better discoverability. Invoke it with `omf search`. See `omf help search` on how to use this new command. [#314]
-- `omf doctor` now checks for good versions of Fish and Git to be installed. [#280]
-- `omf update` can now update specific packages instead of just everything. [#268]
-- `refresh` has been replaced with `omf reload`, which is much safer. [#266]
+- A new package searching command was added for better discoverability. Invoke it with `mar search`. See `mar help search` on how to use this new command. [#314]
+- `mar doctor` now checks for good versions of Fish and Git to be installed. [#280]
+- `mar update` can now update specific packages instead of just everything. [#268]
+- `refresh` has been replaced with `mar reload`, which is much safer. [#266]
 - New packages added to the database: rustup, linuxbrew, await, hash, expand, argu, termux, phpbrew, config
 - New themes: mokou, qing, mars, chain, es, lolfish, lambda, pure
 - Numerous bugfixes to existing features. [#310], [#305], [#287], [#285], [#247], [#242]
