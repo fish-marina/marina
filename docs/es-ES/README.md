@@ -97,7 +97,7 @@ Instala uno _o más_ paquetes.
 #### `mar repositories` _`[list|add|remove]`_
 
 Gestiona los paquetes de los repositorios instalados por el usuario. Los paquetes de los repositorios son de donde los paquetes provienen utilizando
-comandos como `mar install`. De manera predeterminada el [repositorio oficial](https://github.com/oh-my-fish/packages-main) está siempre instalado y
+comandos como `mar install`. De manera predeterminada el [repositorio oficial](https://github.com/fish-marina/packages) está siempre instalado y
 disponible.
 
 #### `mar list`

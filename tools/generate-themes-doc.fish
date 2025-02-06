@@ -4,11 +4,11 @@
 #
 # ./tools/generate-themes-doc.fish > docs/NewThemes.md
 #
-# Prior to running it, check out packages-main repository alongside marina.
+# Prior to running it, check out packages repository alongside marina.
 # If it's checked out at another location, you can specify it with the only
 # optional argument
 #
-# ./tools/generate-themes-doc.fish /full-or-rel-path/packages-main > docs/NewThemes.md
+# ./tools/generate-themes-doc.fish /full-or-rel-path/packages > docs/NewThemes.md
 #
 
 set TOC_TBL_COLS 7
@@ -16,7 +16,7 @@ set TOC_TBL_COLS 7
 if [ $argv ]
   set packages "$argv/packages"
 else
-  set packages "../packages-main/packages"
+  set packages "../packages/packages"
 end
 
 type -q gsed; and alias sed gsed

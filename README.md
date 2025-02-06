@@ -1,7 +1,7 @@
 
 # The [Fishshell](http://fishshell.com) Framework
 
-[![MIT License](https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square)](/LICENSE) [![Fish Shell Version](https://img.shields.io/badge/fish-≥v2.2.0-007EC7.svg?style=flat-square)](http://fishshell.com) [![Build](https://github.com/oh-my-fish/oh-my-fish/workflows/Build/badge.svg)](https://github.com/oh-my-fish/oh-my-fish/actions?query=workflow%3ABuild)
+[![MIT License](https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square)](/LICENSE) [![Fish Shell Version](https://img.shields.io/badge/fish-≥v2.2.0-007EC7.svg?style=flat-square)](http://fishshell.com) [![Build](https://github.com/fish-marina/marina/workflows/Build/badge.svg)](https://github.com/fish-marina/marina/actions?query=workflow%3ABuild)
 
 > ⚠️ Marina is currently in the process of being renamed from Oh My Fish. While this takes place some links in the
 > documentation may still point to Oh My Fish instead
@@ -33,31 +33,31 @@ Marina is a hard fork of Oh My Fish. Marina strives to remain compatible to Oh M
 You can get started right away with the default setup by running this in your terminal:
 
 ```fish
-curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
+curl https://raw.githubusercontent.com/fish-marina/marina/master/bin/install | fish
 ```
 
 This will download the installer script and start the installation. Alternatively, you can download the installer and customize your install:
 
 ```fish
-curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install > install
+curl https://raw.githubusercontent.com/fish-marina/marina/master/bin/install > install
 fish install --path=~/.local/share/mar --config=~/.config/mar
 ```
 
 You can verify the integrity of the downloaded installer by verifying the script against [this checksum](bin/install.sha256):
 
 ```
-curl -sL https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install.sha256 | shasum -a 256 --check
+curl -sL https://raw.githubusercontent.com/fish-marina/marina/master/bin/install.sha256 | shasum -a 256 --check
 ```
 
 You can also install Marina with Git or with an offline source tarball downloaded from the [releases page][releases]:
 
 ```fish
 # with git
-$ git clone https://github.com/oh-my-fish/oh-my-fish
-$ cd oh-my-fish
+$ git clone https://github.com/fish-marina/marina
+$ cd marina
 $ bin/install --offline
 # with a tarball
-$ curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install > install
+$ curl https://raw.githubusercontent.com/fish-marina/marina/master/bin/install > install
 $ fish install --offline=mar.tar.gz
 ```
 
@@ -72,7 +72,7 @@ Run `install --help` for a complete list of install options you can customize.
 
 - Due to a regression bug in fish 2.6 with some terminal emulators, right prompts make the shell unusable.
   MAR's `default` theme features a right prompt, so it's necessary to use an alternative theme until a fix is released.
-  (see [#541](https://github.com/oh-my-fish/oh-my-fish/issues/541))
+  (see [#541](https://github.com/fish-marina/marina/issues/541))
 
 
 ## Getting Started
@@ -98,7 +98,7 @@ Install one _or more_ packages.
 
 #### `mar repositories` _`[list|add|remove]`_
 
-Manage user-installed package repositories. Package repositories are where packages come from used by commands like `mar install`. By default the [official repository](https://github.com/oh-my-fish/packages-main) is always installed and available.
+Manage user-installed package repositories. Package repositories are where packages come from used by commands like `mar install`. By default the [official repository](https://github.com/marina/packages) is always installed and available.
 
 #### `mar list`
 
@@ -207,5 +207,5 @@ If you need startup commands to be run *before* Marina begins loading plugins, p
 
 Marina uses an advanced and well defined plugin architecture to ease plugin development, including init/uninstall hooks, function and completion autoloading. [See the packages documentation](docs/en-US/Packages.md) for more details.
 
-[mar-issues-new]: https://github.com/oh-my-fish/oh-my-fish/issues/new
-[releases]: https://github.com/oh-my-fish/oh-my-fish/releases
+[mar-issues-new]: https://github.com/fish-marina/marina/issues/new
+[releases]: https://github.com/fish-marina/marina/releases

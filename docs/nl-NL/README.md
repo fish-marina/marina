@@ -94,7 +94,7 @@ Installeer één _of meerdere_ pakketten.
 
 #### `mar repositories` _`[list|add|remove]`_
 
-Beheer eigen toegevoegde pakketbronnen. Pakketbronnen bevatten de pakketten die kunnen worden geïnstalleerd met `mar install`. Standaard is alleen de [officiële pakketbron](https://github.com/oh-my-fish/packages-main) beschikbaar.
+Beheer eigen toegevoegde pakketbronnen. Pakketbronnen bevatten de pakketten die kunnen worden geïnstalleerd met `mar install`. Standaard is alleen de [officiële pakketbron](https://github.com/fish-marina/packages) beschikbaar.
 
 #### `mar list`
 

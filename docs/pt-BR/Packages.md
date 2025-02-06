@@ -124,7 +124,7 @@ Os pacotes podem usar este gancho para limpar recursos personalizados, etc.
 
 # Torná-lo público
 
-O registro oficial de pacotes públicos é gerenciado no repositório [oh-my-fish/packages-main](https://github.com/oh-my-fish/packages-main). Consulte o README desse repositório para obter instruções sobre como adicionar seu pacote ao banco de dados oficial do pacote.
+O registro oficial de pacotes públicos é gerenciado no repositório [fish-marina/packages](https://github.com/fish-marina/packages). Consulte o README desse repositório para obter instruções sobre como adicionar seu pacote ao banco de dados oficial do pacote.
 
 
 [fish-bind]: http://fishshell.com/docs/current/commands.html#bind

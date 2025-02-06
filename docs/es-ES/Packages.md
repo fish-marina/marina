@@ -138,7 +138,7 @@ Los paquetes pueden utilizar este hook para limpiar recursos personalizados, etc
 
 # Hágalo público
 
-El registro oficial de paquetes públicos es gestionado en el repositorio [oh-my-fish/packages-main](https://github.com/oh-my-fish/packages-main). Vea el
+El registro oficial de paquetes públicos es gestionado en el repositorio [fish-marina/packages](https://github.com/fish-marina/packages). Vea el
 archivo README de ese repositorio para encontrar instrucciones de cómo añadir su paquete a la base de datos oficial de paquetes.
 
 

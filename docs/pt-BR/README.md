@@ -54,7 +54,7 @@ Instala um _ou mais_ pacotes.
 
 #### `mar repositories` _`[list|add|remove]`_
 
-Gerencie os repositórios de pacotes instalados pelo usuário. Repositórios de pacotes são onde os pacotes vêm a ser usados por comandos como `mar install`. Por padrão o [repositorio oficial](https://github.com/oh-my-fish/packages-main) é sempre instalado e disponível.
+Gerencie os repositórios de pacotes instalados pelo usuário. Repositórios de pacotes são onde os pacotes vêm a ser usados por comandos como `mar install`. Por padrão o [repositorio oficial](https://github.com/fish-marina/packages) é sempre instalado e disponível.
 
 #### `mar list`
 

@@ -124,7 +124,7 @@ Packages can use this hook to clean up custom resources, etc.
 
 # Make it public
 
-The official registry of public packages is managed in the [oh-my-fish/packages-main](https://github.com/oh-my-fish/packages-main) repository. See the README of that repository for instructions on how to add your package to the official package database.
+The official registry of public packages is managed in the [fish-marina/packages](https://github.com/fish-marina/packages) repository. See the README of that repository for instructions on how to add your package to the official package database.
 
 
 [fish-bind]: http://fishshell.com/docs/current/commands.html#bind

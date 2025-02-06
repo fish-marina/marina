@@ -23,7 +23,7 @@ function mar.cli.update
       echo (mar::em)"You are now using Marina version $MAR_VERSION."(mar::off)
     else
       echo (mar::err)"Marina failed to update."(mar::off)
-      echo "Please open a new issue here → "(mar::em)"github.com/oh-my-fish/oh-my-fish/issues"(mar::off)
+      echo "Please open a new issue here → "(mar::em)"https://github.com/fish-marina/marina/issues"(mar::off)
     end
   end
 

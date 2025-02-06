@@ -123,7 +123,7 @@ Pakketten kunnen deze hook gebruiken om aangepaste bronnen te wissen of anderzij
 
 # Delen
 
-Het officiële register met openbare pakketten wordt beheerd in de [oh-my-fish/packages-main](https://github.com/oh-my-fish/packages-main)-pakketbron. Neem de README van die pakketbron door om te zien hoe u uw pakket kunt toevoegen.
+Het officiële register met openbare pakketten wordt beheerd in de [fish-marina/packages](https://github.com/fish-marina/packages)-pakketbron. Neem de README van die pakketbron door om te zien hoe u uw pakket kunt toevoegen.
 
 
 [fish-bind]: http://fishshell.com/docs/current/commands.html#bind

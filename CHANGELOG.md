@@ -66,7 +66,7 @@ A big shiny improvement was made to the command-line help text, with more manpag
 - Documentation fixes and improvements. [#493] [#507] [#508] [#520] [#543] [#546] [#548]
 
 ### New plugins and themes
-- Plugins and themes are now tracked separately! Watch the [packages-main] repo for new plugins and themes.
+- Plugins and themes are now tracked separately! Watch the [packages] repo for new plugins and themes.
 
 ### Contributors
 Thanks to the people who contributed to this release.
@@ -84,7 +84,7 @@ Thanks to the people who contributed to this release.
 
 ## [5] - 2017-02-11
 ### Added
-- Replace package database with new, independently installed package repository system. Packages are no longer stored in the framework repository tree. Instead packages are stored in a package repository, a Git repo with a list of available packages. Multiple sources are supported, with the old database contents moved to the [packages-main] repository. [#427]
+- Replace package database with new, independently installed package repository system. Packages are no longer stored in the framework repository tree. Instead packages are stored in a package repository, a Git repo with a list of available packages. Multiple sources are supported, with the old database contents moved to the [packages] repository. [#427]
 
 ### Bugs fixed
 - Fix function paths when switching themes during runtime without a reload. Previously if a theme had a `functions` directory, it was only added to the function path at init time and not removed when switching themes. [#479] [#485]
@@ -241,7 +241,7 @@ Thanks to the people who contributed to this release.
 - szwathub
 
 
-[packages-main]: https://github.com/oh-my-fish/packages-main
+[packages]: https://github.com/fish-marina/packages
 [2]: https://github.com/oh-my-fish/oh-my-fish/releases/tag/v2
 [3]: https://github.com/oh-my-fish/oh-my-fish/releases/tag/v3
 [4]: https://github.com/oh-my-fish/oh-my-fish/releases/tag/v4

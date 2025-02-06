@@ -2,7 +2,7 @@
 # Marina installer. See `install --help` for usage.
 
 # Set environment options.
-set -q MAR_REPO_URI;    or set MAR_REPO_URI "https://github.com/oh-my-fish/oh-my-fish"
+set -q MAR_REPO_URI;    or set MAR_REPO_URI "https://github.com/fish-marina/marina"
 set -q MAR_REPO_BRANCH; or set MAR_REPO_BRANCH "master"
 
 
@@ -145,7 +145,7 @@ Marina installation failed.
 If you think that it's a bug, please open an
 issue with the complete installation log here:
 
-http://github.com/oh-my-fish/oh-my-fish/issues"
+https://github.com/fish-marina/marina/issues"
 
     if not set -q VERBOSE
       echo
