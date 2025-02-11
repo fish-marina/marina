@@ -188,10 +188,10 @@ function install_from_github
     # Get the commit for the latest release.
     set -l hash (command git --git-dir "$MAR_PATH/.git" --work-tree "$MAR_PATH" rev-list --tags='v*' --max-count=1 2> /dev/null)
       # Get the release tag.
-      and set -l tag (command git --git-dir "$MAR_PATH/.git" --work-tree "$MAR_PATH" describe --tags $hash)
+      and set -l tag (command git --git-dir "$MAR_PATH/.git" --work-tree "$MAR_PATH" describe --tags $hash 2> /dev/null)
       # Checkout the release.
       and command git --git-dir "$MAR_PATH/.git" --work-tree "$MAR_PATH" checkout --quiet tags/$tag
-      or report error "Error getting latest version!"
+      or echo "Unable to find latest version, using $MAR_REPO_BRANCH instead..."
   end
 
   set_git_remotes
@@ -246,6 +246,9 @@ function install_offline
   # Copy the source into the install location.
   command cp -r "$OFFLINE_PATH" "$MAR_PATH"
     or abort "Failed to copy source!"
+
+  # Make sure OMF_PATH is writable by the user.
+  chmod -R u+w $OMF_PATH
 
   # Set up Git remotes only if the offline install is a Git repository.
   test -d "$MAR_PATH/.git"
