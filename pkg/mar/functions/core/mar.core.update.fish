@@ -21,7 +21,7 @@ function mar.core.update
       # Get the commit for the latest release.
       and set -l hash (command git -C "$MAR_PATH" rev-list --tags='v*' --max-count=1 2> /dev/null)
       # Get the release tag.
-      and set -l tag (command git -C "$MAR_PATH" describe --tags $hash)
+      and set -l tag (command git -C "$MAR_PATH" describe --tags $hash 2> /dev/null)
       # Checkout the release.
       and command git -C "$MAR_PATH" checkout --quiet tags/$tag
       and return 0
@@ -32,9 +32,9 @@ function mar.core.update
   else
     # Determine the branch to use for the dev channel.
     set -q MAR_DEV_BRANCH
-      or set -l MAR_DEV_BRANCH master
+      or set -l MAR_DEV_BRANCH main
 
-    # Switch to the master branch if we are in a detached head.
+    # Switch to the main branch if we are in a detached head.
     command git -C "$MAR_PATH" symbolic-ref -q HEAD > /dev/null
       or command git -C "$MAR_PATH" checkout $MAR_DEV_BRANCH --quiet
 

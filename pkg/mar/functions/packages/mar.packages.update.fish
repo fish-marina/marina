@@ -2,7 +2,7 @@ function mar.packages.update -a name
   if set -l props (mar.index.stat $name branch)
     set branch $props[1]
     if test -z "$branch"
-      set branch "master"
+      set branch "main"
     end
   end
 

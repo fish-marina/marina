@@ -27,7 +27,7 @@ function mar.index.repositories -d 'Manage package repositories'
       if set -q argv[3]
         set repo_branch $argv[3]
       else
-        set repo_branch master
+        set repo_branch main
       end
 
       set -l repo "$repo_url $repo_branch"
@@ -64,7 +64,7 @@ function mar.index.repositories -d 'Manage package repositories'
       if set -q argv[3]
         set repo_branch $argv[3]
       else
-        set repo_branch master
+        set repo_branch main
       end
 
       set -l repo "$repo_url $repo_branch"

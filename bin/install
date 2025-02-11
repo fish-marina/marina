@@ -3,7 +3,7 @@
 
 # Set environment options.
 set -q MAR_REPO_URI;    or set MAR_REPO_URI "https://github.com/fish-marina/marina"
-set -q MAR_REPO_BRANCH; or set MAR_REPO_BRANCH "master"
+set -q MAR_REPO_BRANCH; or set MAR_REPO_BRANCH "main"
 
 
 function main
